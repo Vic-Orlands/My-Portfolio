@@ -1,0 +1,159 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+li {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  list-style: none;
+}
+
+.headerBody {
+  display: flex;
+  justify-content: space-between;
+  background: black;
+  color: white;
+  height: 14vh;
+}
+
+.headerName {
+  display: flex;
+  margin: 16px;
+  justify-content: center;
+  align-items: center;
+}
+
+.headerMenu {
+  display: none;
+}
+
+.nav {
+  display: block;
+}
+
+.myLogo {
+  height: 40px;
+  width: 65px;
+}
+
+.myName {
+  margin: auto 10px;
+}
+
+.myName li {
+  font-size: 24px;
+}
+
+.myList-Desktop {
+  display: flex;
+  margin: auto;
+}
+
+.myList-Phone {
+  display: none;
+}
+
+.myList-Desktop li {
+  color: darkgrey;
+  padding: 8px;
+}
+
+.headerName h2 {
+  margin: 10px 10px 0 0;
+}
+
+/* Below is the styling of the header's responsiveness */
+
+@media screen and (max-width: 800px) and (min-width: 600px) {
+  .myName li {
+    font: 20px sans-serif;
+  }
+
+  .myList-Desktop li {
+    font: 12px sans-serif;
+  }
+}
+
+@media screen and (max-width: 584px) {
+  /* at max width of 584px, i displayed the header name and header lists none
+  to accomodate space and replaced it with the logo and menu */
+
+  .myName {
+    display: none;
+  }
+
+  .headerMenu {
+    display: block;
+    color: white;
+    height: 45px;
+    width: 25px;
+  }
+
+  .headerName {
+    position: relative;
+  }
+
+  .myList-Desktop {
+    display: none;
+  }
+
+  .myList-Phone {
+    position: absolute;
+    display: grid;
+    top: 100%;
+    left: -550px;
+    width: 589px;
+    z-index: 2;
+    border: 1px solid rgba(48, 47, 47, 0.04);
+    box-shadow: 0 16px 24px 2px rgba(7, 6, 6, 0.14);
+    list-style: none;
+    margin: 12px 0;
+    background-color: rgb(78, 76, 76);
+    color: white;
+    animation-name: dropdown-slow;
+    animation-duration: 1s;
+  }
+
+
+  .myList-Phone li {
+    text-align: center;
+    font: 20px sans-serif;
+    color: darkgrey;
+    padding: 8px 12px;
+    animation-name: dropdown-slow;
+    animation-duration: 1s;
+  }
+
+  .myList-Phone li:hover {
+    background-color: rgba(0, 0, 0, 0.14);
+    cursor: pointer;
+  }
+
+  @keyframes dropdown-slow {
+    0% {
+      opacity: 0.2;
+    }
+
+    20% {
+      opacity: 0.4;
+    }
+
+    40% {
+      opacity: 0.5;
+    }
+
+    60% {
+      opacity: 0.6;
+    }
+
+    80% {
+      opacity: 0.8;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+}

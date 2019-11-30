@@ -1,0 +1,157 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.projectBody {
+  color: rgb(109, 106, 109);
+}
+.projectBounce {
+  text-align: center;
+  margin: 20px 0 0 0;
+  position: relative;
+  animation-name: bounce;
+  animation-duration: 4s;
+}
+.projectBounce h1 {
+  font: 38px sans-serif;
+  margin: 20px;
+}
+.projectBounce h5 {
+  font: 16px sans-serif;
+}
+.projectFiles {
+  margin: 40px 0 0 150px;
+}
+.projectFiles h3 {
+  font: 26px sans-serif;
+  padding: 10px 0 10px 0;
+}
+.projectFiles h6 {
+  font: 16px sans-serif;
+  margin: 25px 0 0 0;
+}
+.projectFiles p {
+  font: 18px sans-serif;
+  padding: 2px;
+}
+.projectFiles hr {
+  width: 100px;
+  margin: 10px 0 20px 0;
+  border: 1.5px solid orange;
+}
+.projectFiles div {
+  margin: 0 0 75px 0;
+}
+
+/* Below is the animation code that makes the Header bounce on page load.
+Accomplished it with keyframes as seen below */
+
+@keyframes bounce {
+  0% {
+    top: -40px;
+    opacity: 0;
+  }
+  25% {
+    top: 0px;
+    opacity: 0.6;
+  }
+  48% {
+    top: -32px;
+    opacity: 0.9;
+  }
+  54% {
+    top: 0px;
+    opacity: 1;
+  }
+  60% {
+    top: -28px;
+  }
+  68% {
+    top: 0px;
+  }
+  72% {
+    top: -22px;
+  }
+  75% {
+    top: 0px;
+  }
+  79% {
+    top: -17px;
+  }
+  83% {
+    top: 0px;
+  }
+  88% {
+    top: -11px;
+  }
+  90% {
+    top: 0px;
+  }
+  94% {
+    top: -8px;
+  }
+  98% {
+    top: 0px;
+  }
+  99% {
+    top: -2px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+
+/* Below is the styling of the responsiveness at 
+
+different screen sizes */
+
+@media screen and (max-width:800px) and (min-width: 600px) {
+  .projectFiles {
+    margin: 25px 0px 0px 20px;
+  }
+  .projectFiles h3 {
+    font: 24px sans-serif;
+    margin-top: 10px;
+    margin-bottom: 0px;
+  }
+  .projectFiles p {
+    font: 18px sans-serif;
+  }
+  .projectFiles h6 {
+    font: 18px sans-serif;
+    margin-top: 15px;
+  }
+  .projectFiles hr {
+    width: 88px;
+    margin: 2px 0 15px 0;
+  }
+}
+
+@media screen and (max-width: 584px) {
+  .projectBounce h1 {
+    font: 24px sans-serif;
+    margin-bottom: 10px;
+  }
+  .projectBounce h5 {
+    font: 14px sans-serif;
+  }
+  .projectFiles {
+    margin: 25px 0px 0px 20px;
+  }
+  .projectFiles h3 {
+    font: 20px sans-serif;
+    margin-top: 10px;
+    margin-bottom: 0px;
+  }
+  .projectFiles p {
+    font: 14px sans-serif;
+  }
+  .projectFiles h6 {
+    font: 14px sans-serif;
+    margin-top: 15px;
+  }
+  .projectFiles hr {
+    width: 85px;
+    margin: 2px 0 15px 0;
+  }
+}

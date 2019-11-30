@@ -1,0 +1,82 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.footerBody {
+  background: black;
+  height: 40vh;
+  margin-top: 10%;
+}
+
+.footerList {
+  display: flex;
+  justify-content: center;
+}
+
+.footerList li {
+  font: 24px sans-serif;
+  color: rgb(190, 187, 187);
+  margin-top: 40px;
+  margin-bottom: 0px;
+  padding: 30px;
+}
+
+.nav {
+  text-decoration: none;
+}
+
+.nav:hover {
+  text-decoration: underline;
+}
+
+.footerRule {
+  width: 70%;
+  color: darkgrey;
+  margin: 10px auto 10px;
+}
+
+.footerFonts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footerFonts .font {
+  padding: 0 10px;
+  margin: 0 0 10px 0;
+  height: 50px;
+  width: 20px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.footerPar {
+  text-align: center;
+  font: 20px sans-serif;
+  color: darkgrey;
+}
+
+/* Below is the styling of the responsiveness at 
+
+different screen sizes */
+
+@media screen and (max-width:800px) {
+  .footerList li {
+    font: 14px sans-serif;
+    padding: 10px;
+  }
+
+  .footerRule {
+    margin-bottom: 15px;
+  }
+
+  .footerFonts .font {
+    height: 45px;
+    width: 15px;
+  }
+
+  .footerPar {
+    font: 16px sans-serif;
+  }
+}
