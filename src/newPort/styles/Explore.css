@@ -1,0 +1,87 @@
+
+.exploreBody {
+	border-bottom: 1px solid rgb(202, 182, 182);
+	margin-top: 50px;
+}
+
+.overlay {
+	z-index: 1;
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+}
+
+.overlay p {
+	color: #615e5e;
+	position: absolute;
+	font-size: 280px;
+	font-weight: 800;
+	top: -60%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.myBtn {
+	position: absolute;
+	top: -60%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.button {
+	display: block;
+	padding: 24px 48px;
+	font-family: Poppins;
+	font-weight: 700;
+	font-size: 12px;
+	letter-spacing: 6px;
+	background: none;
+	color: #fff;
+	border: 2px solid #fff;
+	text-transform: uppercase;
+	outline: none;
+	overflow: hidden;
+	z-index: 1;
+	cursor: crosshair;
+	transition: 0.8s ease-out;
+}
+
+.myBtn:hover {
+	color: #101010;
+	cursor: crosshair;
+}
+
+.myBtn::before {
+	content: "";
+	position: absolute;
+	background: #fff;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	top: 100%;
+	z-index: -1;
+	transition: top 0.8s ease-out;
+}
+
+.myBtn:hover::before {
+	top: 0;
+}
+
+/* ---------------------------mobile responsiveness------------------------------ */
+
+@media screen and (max-width: 340px) {
+	.screen {
+		font-size: 80px;
+		/* font-weight: 800; */
+		top: -70%;
+	}
+
+	.myBtn {
+		top: -70%;
+	}
+
+	.button {
+		padding: 14px 22px;
+		letter-spacing: 5px;
+	}
+}
