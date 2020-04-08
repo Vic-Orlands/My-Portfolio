@@ -86,7 +86,6 @@
 	font-size: .75rem;
 }
 
-
 .container .Card .face.face2 .content a {
 	margin: 15px 0 0;
 	display: inline-block;
@@ -103,3 +102,33 @@
 }
 
 /* ---------------------------mobile responsiveness------------------------------ */
+
+@media (max-width: 364px) {
+	.callActionBody {
+		font-size: 8px;
+		overflow: hidden;
+	}
+
+	.container .Card .face.face2 .content p {
+		font-size: .6rem;
+	}
+
+	.container .Card .face {
+		width: 240px;
+		height: 170px;
+	}
+
+	.container .Card .face.face2 {
+		padding: 10px;
+		transform: translateY(-70px);
+	}
+
+	.container .Card .face.face1 .content img {
+		max-width: 150px;
+	}
+
+	.container .Card .face.face2 .content a {
+		margin: 10px 0 0;
+		padding: 4px;
+	}
+}

@@ -1,4 +1,3 @@
-
 .contactBody {
 	margin: 20px 0;
 	border-top: 1px solid rgb(202, 182, 182);
@@ -151,9 +150,9 @@
 
 /* --------------------mobile responsiveness------------------------- */
 
-@media (max-width: 340px) {
-	/* .contactBody {
-		max-width: 100%;
+@media (max-width: 364px) {
+	.contactBody {
+		max-width: 364px;
 		box-sizing: border-box;
 	}
 
@@ -171,11 +170,21 @@
 		margin-bottom: 40px;
 	}
 
+	.backContent h3 {
+		font: 11px sans-serif;
+		letter-spacing: .2px;
+	}
+
+	.backContent .cardHoverFont {
+		font-size: 32px;
+		padding: 10px;
+		margin-top: 10px;
+	}
+
 	.contactBody .cardHoverContainer {
 		position: relative;
 		width: 180px;
 		height: 270px;
-		margin-left: -25px;
 	}
 
 	.contactBody .contactFormContainer {
@@ -202,5 +211,5 @@
 		width: 70px;
 		margin: 10px auto 0px;
 		font-size: 10px;
-	} */
+	}
 }

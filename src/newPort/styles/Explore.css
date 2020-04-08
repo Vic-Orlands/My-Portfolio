@@ -1,4 +1,3 @@
-
 .exploreBody {
 	border-bottom: 1px solid rgb(202, 182, 182);
 	margin-top: 50px;
@@ -69,19 +68,33 @@
 
 /* ---------------------------mobile responsiveness------------------------------ */
 
-@media screen and (max-width: 340px) {
-	.screen {
-		font-size: 80px;
-		/* font-weight: 800; */
-		top: -70%;
+@media (max-width: 364px) {
+	.exploreBody {
+		margin-top: 25px;
+		max-width: 364px;
+
+	}
+
+	.overlay {
+		z-index: 1;
+		position: absolute;
+		/* width: 100%; */
+		height: 100vh;
+	}
+
+	.overlay p {
+		font-size: 75px;
+		top: -80%;
 	}
 
 	.myBtn {
-		top: -70%;
-	}
+	top: -80%;
+}
 
-	.button {
-		padding: 14px 22px;
-		letter-spacing: 5px;
-	}
+.button {
+	padding: 9px 10px;
+	font-size: 9px;
+	font-weight: lighter;
+	letter-spacing: 4px;
+}
 }

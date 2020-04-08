@@ -1,4 +1,3 @@
-
 .navContainer {
 	display: flex;
 	justify-content: space-between;
@@ -60,63 +59,64 @@
 	width: 85%;
 }
 
-/* .barContainer {
+.barContainer {
 	display: none;
-} */
+}
 
 /* --------------------mobile responsiveness------------------------- */
 
-/* @media (max-width: 340px) {
+@media (max-width: 364px) {
 	.navContainer {
 		box-sizing: border-box;
+		max-width: 364px;
+
 	}
 
 	.navName img {
 		width: 100%;
-		height: auto;
 	}
 
 	.navName h1 {
 		display: none;
 	}
 
-	.navCategories {
+	.navContainer ul {
 		display: none;
 	}
 
-	.navCategories-mobile {
-		display: flex;
+	.navCategories-mobile a {
+		font-size: 12px;
+		text-decoration: none;
+		color: #ccc2c2;
+		padding: 5px;
 		flex-direction: column;
-		position: absolute;
-		top: 55px;
-		right: 0;
 	}
 
-	.navCategories-mobile a {
-		text-decoration: none;
+	.navCategories-mobile a:hover {
 		color: #f1f1f1;
-		padding: 5px;
-	} */
+	}
 
 	/* ----------------------toggling bar animation styling------------------------- */
-	/* .barContainer {
-		display: inline-block;
+
+	.barContainer {
+		display: block;
 		cursor: pointer;
-		margin: auto;
+		margin: 0px 20px;
 	}
 
 	.bar1,
 	.bar2,
 	.bar3 {
-		width: 30px;
-		height: 3px;
+		width: 23px;
+		height: 2px;
 		background-color: #f1f1f1;
 		margin: 6px 0;
-		transition: 0.7s ease-out;
+		transition: 0.5s ease-out;
+		/* transform: rotate(360deg); */
 	}
 
 	.change .bar1 {
-		transform: rotate(-45deg) translate(-5px, 5px);
+		transform: rotate(-45deg) translate(-4.5px, 5.5px);
 	}
 
 	.change .bar2 {
@@ -124,6 +124,6 @@
 	}
 
 	.change .bar3 {
-		transform: rotate(45deg) translate(-7px, -8px);
+		transform: rotate(45deg) translate(-5.5px, -6.5px);
 	}
-} */
+}

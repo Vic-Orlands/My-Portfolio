@@ -3,27 +3,30 @@ import logo from '../assets/logo.png';
 import '../styles/Nav.css';
 
 class Nav extends Component {
-	// navContainer = document.querySelector('.navContainer');
+	navContainer = document.querySelector('.navContainer');
 
-	// state = {
-	// 	navContainer: false,
-	// 	toggle: false
-	// };
+	state = {
+		navContainer: false,
+		toggle: false
+	};
 
-	// change = (e) => {
-	// 	e.preventDefault();
-	// 	this.setState({
-	// 		navContainer: !this.state.navContainer,
-	// 		toggle: !this.state.toggle
-	// 	});
-	// };
+	change = (e) => {
+		e.preventDefault();
+		this.setState({
+			navContainer: !this.state.navContainer,
+			toggle: !this.state.toggle
+		});
+	};
 
 	render() {
 		return (
-			// <nav className={'navContainer navbar navbar-expand-sm ' + (this.state.navContainer ? 'change' : '')}>
-			<nav className="navbar navbar-expand-sm navbar-dark navContainer">
+			<nav
+				className={
+					'navbar navbar-expand-sm navbar-dark navContainer ' + (this.state.navContainer ? 'change' : '')
+				}
+			>
 				<div className="navName">
-					<img src={logo} alt="My Logo" className="navbar-logo"/>
+					<img src={logo} alt="My Logo" className="navbar-logo" />
 					<h1 className="navbar-brand"> INNOCENT CHIMEZIE VICTOR </h1>
 				</div>
 
@@ -50,7 +53,14 @@ class Nav extends Component {
 					</li>
 				</ul>
 
-{/* 
+				{/* --------------------------------------------------------below is the toggle menu bar on small screens---------------------------------------- */}
+
+				<div className="barContainer" onClick={this.change}>
+					<div className="bar1" />
+					<div className="bar2" />
+					<div className="bar3" />
+				</div>
+
 				{this.state.toggle && (
 					<div className="navCategories-mobile">
 						<a href="#home" className="nav-mobile">
@@ -70,13 +80,7 @@ class Nav extends Component {
 							ARTICLES{' '}
 						</a>
 					</div>
-				)} */}
-
-				{/* <div className="barContainer" onClick={this.change}>
-					<div className="bar1" />
-					<div className="bar2" />
-					<div className="bar3" />
-				</div> */}
+				)}
 			</nav>
 		);
 	}

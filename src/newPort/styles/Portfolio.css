@@ -8,3 +8,9 @@ body {
 	background: #333;
 	color: rgb(202, 182, 182);
 }
+
+@media screen and (max-width: 364px) {
+	main {
+		max-width: 364px;
+	}
+}

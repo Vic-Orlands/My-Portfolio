@@ -3,7 +3,13 @@ import { FaLinkedin, FaGithub, FaTwitter, FaDev, FaMedium, FaHandPeace } from 'r
 import image from '../assets/port.jpg';
 import '../styles/ContactMe.css';
 
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+
 class ContactMe extends Component {
+	componentDidMount = () => {
+		Aos.init({ duration: 2000 });
+	};
 	render() {
 		return (
 			<section className="contactBody" id="contactBody">
@@ -11,7 +17,7 @@ class ContactMe extends Component {
 				<hr />
 
 				<div className="cardFlex">
-					<div className="cardHoverContainer">
+					<div data-aos="slide-right" className="cardHoverContainer">
 						<div className="front">
 							<img src={image} alt="myPhoto" />
 						</div>
@@ -45,7 +51,7 @@ class ContactMe extends Component {
 						</div>
 					</div>
 
-					<div className="contactFormContainer">
+					<div data-aos="slide-up" className="contactFormContainer">
 						<label> Name: </label>
 						<input type="text" placeholder="Enter your name" />
 

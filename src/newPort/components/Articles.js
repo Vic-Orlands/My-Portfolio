@@ -1,8 +1,14 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { FaHeart } from 'react-icons/fa';
 import '../styles/Articles.css';
 
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+
 const Articles = () => {
+	useEffect(() => {
+		Aos.init({ duration: 2000 });
+	}, []);
 	return (
 		<section className="articlesContainer">
 			<center>
@@ -11,7 +17,7 @@ const Articles = () => {
 			<hr />
 
 			<div className="card-deck artCardContainer row">
-				<div className="card-body artCard col-sm-4">
+				<div data-aos="fade-right" className="card-body artCard col-sm-4">
 					<div className="topFace">
 						<div className="content">
 							<center>
@@ -33,7 +39,7 @@ const Articles = () => {
 					</div>
 				</div>
 
-				<div className="card-body artCard col-sm-4">
+				<div data-aos="zoom-out" className="card-body artCard col-sm-4">
 					<div className="topFace">
 						<div className="content">
 							<center>
@@ -58,7 +64,7 @@ const Articles = () => {
 					</div>
 				</div>
 
-				<div className="card-body artCard col-sm-4">
+				<div data-aos="fade-left" className="card-body artCard col-sm-4">
 					<div className="topFace">
 						<div className="content">
 							<center>
@@ -80,7 +86,7 @@ const Articles = () => {
 					</div>
 				</div>
 
-				<div className="card-body artCard col-sm-4">
+				<div data-aos="fade-right" className="card-body artCard col-sm-4">
 					<div className="topFace">
 						<div className="content">
 							<center>
@@ -102,7 +108,7 @@ const Articles = () => {
 					</div>
 				</div>
 
-				<div className="card-body artCard col-sm-4">
+				<div data-aos="zoom-in" className="card-body artCard col-sm-4">
 					<div className="topFace">
 						<div className="content">
 							<center>
@@ -124,7 +130,7 @@ const Articles = () => {
 					</div>
 				</div>
 
-				<div className="card-body artCard col-sm-4">
+				<div data-aos="fade-left" className="card-body artCard col-sm-4">
 					<div className="topFace">
 						<div className="content">
 							<center>
