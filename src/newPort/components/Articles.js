@@ -16,8 +16,8 @@ const Articles = () => {
 			</center>
 			<hr />
 
-			<div className="card-deck artCardContainer row">
-				<div data-aos="fade-right" className="card-body artCard col-sm-4">
+			<div className="artCardContainer">
+				<div data-aos="zoom-in" className="artCard">
 					<div className="topFace">
 						<div className="content">
 							<center>
@@ -39,7 +39,7 @@ const Articles = () => {
 					</div>
 				</div>
 
-				<div data-aos="zoom-out" className="card-body artCard col-sm-4">
+				<div data-aos="zoom-out" className="artCard">
 					<div className="topFace">
 						<div className="content">
 							<center>
@@ -64,7 +64,7 @@ const Articles = () => {
 					</div>
 				</div>
 
-				<div data-aos="fade-left" className="card-body artCard col-sm-4">
+				<div data-aos="zoom-in" className="artCard">
 					<div className="topFace">
 						<div className="content">
 							<center>
@@ -86,7 +86,7 @@ const Articles = () => {
 					</div>
 				</div>
 
-				<div data-aos="fade-right" className="card-body artCard col-sm-4">
+				<div data-aos="zoom-out" className="artCard">
 					<div className="topFace">
 						<div className="content">
 							<center>
@@ -108,7 +108,7 @@ const Articles = () => {
 					</div>
 				</div>
 
-				<div data-aos="zoom-in" className="card-body artCard col-sm-4">
+				<div data-aos="zoom-in" className="artCard">
 					<div className="topFace">
 						<div className="content">
 							<center>
@@ -130,7 +130,7 @@ const Articles = () => {
 					</div>
 				</div>
 
-				<div data-aos="fade-left" className="card-body artCard col-sm-4">
+				<div data-aos="zoom-out" className="artCard">
 					<div className="topFace">
 						<div className="content">
 							<center>

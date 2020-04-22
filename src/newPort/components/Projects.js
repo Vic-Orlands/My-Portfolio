@@ -15,7 +15,7 @@ const Projects = () => {
 			</div>
 
 			<div>
-				<div data-aos="slide-right" className="projectFiles">
+				<div data-aos="zoom-in" className="projectFiles">
 					<h3>PROJECTS</h3>
 					<hr />
 					<p> A Todo App </p>
@@ -37,7 +37,7 @@ const Projects = () => {
 					<a href="https://github.com/Vic-Orlands"> See my github account </a>
 				</div>
 
-				<div data-aos="slide-left" className="projectFiles">
+				<div data-aos="zoom-in" className="projectFiles">
 					<h3>COMMUNITY SERVICES</h3>
 					<hr />
 					<p> Taught Scratch to Secondary Schools under the administration of LearnFactory Nigeria.</p>

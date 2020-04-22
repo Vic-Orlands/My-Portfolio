@@ -65,12 +65,7 @@
 
 /* --------------------mobile responsiveness------------------------- */
 
-@media (max-width: 364px) {
-	.navContainer {
-		box-sizing: border-box;
-		max-width: 364px;
-
-	}
+@media screen and (max-width: 768px) {
 
 	.navName img {
 		width: 100%;
@@ -89,7 +84,6 @@
 		text-decoration: none;
 		color: #ccc2c2;
 		padding: 5px;
-		flex-direction: column;
 	}
 
 	.navCategories-mobile a:hover {

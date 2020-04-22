@@ -2,15 +2,10 @@
 	margin: 0px;
 	padding: 0px;
 	box-sizing: border-box;
+	max-width: 100%;
 }
 
 body {
 	background: #333;
 	color: rgb(202, 182, 182);
-}
-
-@media screen and (max-width: 364px) {
-	main {
-		max-width: 364px;
-	}
 }

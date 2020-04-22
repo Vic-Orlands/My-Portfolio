@@ -109,3 +109,9 @@
 		opacity: 0;
 	}
 }
+
+@media screen and (min-width: 200px) and (max-width: 768px) {
+	.animateContainer {
+		display: none;
+	}
+}

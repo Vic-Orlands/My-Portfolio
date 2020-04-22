@@ -10,14 +10,13 @@
 }
 
 .container {
-	position: relative;
 	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
 }
 
 .container .Card {
-	position: relative;
 	background: #333;
-	justify-content: space-between;
 }
 
 .container .Card .face {
@@ -103,10 +102,15 @@
 
 /* ---------------------------mobile responsiveness------------------------------ */
 
-@media (max-width: 364px) {
+@media screen and (max-width: 768px) {
 	.callActionBody {
 		font-size: 8px;
 		overflow: hidden;
+		margin: 70vh auto;
+	}
+
+		.container .Card {
+		margin: auto;
 	}
 
 	.container .Card .face.face2 .content p {

@@ -9,8 +9,10 @@ const CallToAction = () => {
 	}, []);
 	return (
 		<section className="callActionBody" id="callActionBody">
-			<div className="container row">
-				<div data-aos="fade-right" className="Card col-sm">
+
+			<div className="container">
+
+				<div data-aos="zoom-in" className="Card">
 					<div className="face face1">
 						<div className="content">
 							<img src={require('../assets/project.jpg')} width="200px" />
@@ -30,7 +32,7 @@ const CallToAction = () => {
 					</div>
 				</div>
 
-				<div data-aos="fade-up" className="Card col-sm">
+				<div data-aos="fade-up" className="Card">
 					<div className="face face1">
 						<div className="content">
 							<img src={require('../assets/logo1.png')} width="200px" />
@@ -50,7 +52,7 @@ const CallToAction = () => {
 					</div>
 				</div>
 
-				<div data-aos="fade-left" className="Card col-sm">
+				<div data-aos="zoom-in" className="Card">
 					<div className="face face1">
 						<div className="content">
 							<img src={require('../assets/community.jpg')} width="180px" />
@@ -69,7 +71,9 @@ const CallToAction = () => {
 						</div>
 					</div>
 				</div>
+
 			</div>
+
 		</section>
 	);
 };

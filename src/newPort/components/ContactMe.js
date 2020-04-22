@@ -12,12 +12,12 @@ class ContactMe extends Component {
 	};
 	render() {
 		return (
-			<section className="contactBody" id="contactBody">
+			<section className="contactBody">
 				<h2> -------SAY HELLO------- </h2>
 				<hr />
 
 				<div className="cardFlex">
-					<div data-aos="slide-right" className="cardHoverContainer">
+					<div data-aos="zoom-out" className="cardHoverContainer">
 						<div className="front">
 							<img src={image} alt="myPhoto" />
 						</div>
@@ -51,7 +51,7 @@ class ContactMe extends Component {
 						</div>
 					</div>
 
-					<div data-aos="slide-up" className="contactFormContainer">
+					<div data-aos="zoom-in" className="contactFormContainer">
 						<label> Name: </label>
 						<input type="text" placeholder="Enter your name" />
 

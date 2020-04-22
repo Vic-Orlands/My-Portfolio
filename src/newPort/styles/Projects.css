@@ -69,7 +69,7 @@
 	font: 14px sans-serif;
 }
 
-@media (max-width: 364px) {
+@media screen and (max-width: 768px) {
 	.projectBody {
 		color: white;
 		margin-bottom: 0px;

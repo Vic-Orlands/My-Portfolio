@@ -27,7 +27,27 @@ class Nav extends Component {
 			>
 				<div className="navName">
 					<img src={logo} alt="My Logo" className="navbar-logo" />
-					<h1 className="navbar-brand"> INNOCENT CHIMEZIE VICTOR </h1>
+					<h1 className="navbar-brand">
+						{' '}
+						INNOCENT CHIMEZIE VICTOR
+						{/* <span>I</span>
+						<span>N</span>
+						<span>N</span>
+						<span>O</span>
+						<span>C</span>
+						<span>E</span>
+						<span>N</span>
+						<span>T</span>
+						<span />
+						<span>C</span>
+						<span>H</span>
+						<span>I</span>
+						<span>M</span>
+						<span>E</span>
+						<span>Z</span>
+						<span>I</span>
+						<span>E</span> */}
+					</h1>
 				</div>
 
 				<ul className="navbar-nav">

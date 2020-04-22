@@ -68,33 +68,29 @@
 
 /* ---------------------------mobile responsiveness------------------------------ */
 
-@media (max-width: 364px) {
+@media screen and (max-width: 768px) {
 	.exploreBody {
 		margin-top: 25px;
 		max-width: 364px;
-
 	}
 
 	.overlay {
-		z-index: 1;
-		position: absolute;
-		/* width: 100%; */
 		height: 100vh;
 	}
 
 	.overlay p {
-		font-size: 75px;
-		top: -80%;
+		font-size: 4.5rem;
+		top: 30%;
 	}
 
 	.myBtn {
-	top: -80%;
-}
+		top: 30%;
+	}
 
-.button {
-	padding: 9px 10px;
-	font-size: 9px;
-	font-weight: lighter;
-	letter-spacing: 4px;
-}
+	.button {
+		padding: 9px 10px;
+		font-size: 9px;
+		font-weight: lighter;
+		letter-spacing: 4px;
+	}
 }

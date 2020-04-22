@@ -14,8 +14,7 @@
 .contactBody hr {
 	margin: 12px auto 80px;
 	width: 150px;
-	color: #333;
-	background-color: #333;
+	color: rgb(248, 232, 232);
 }
 
 .contactBody .cardHoverContainer {
@@ -74,7 +73,7 @@
 }
 
 .backContent .cardHoverFont:hover {
-	background: #333;
+	background: #000;
 }
 
 .contactBody .cardFlex {
@@ -150,9 +149,9 @@
 
 /* --------------------mobile responsiveness------------------------- */
 
-@media (max-width: 364px) {
+@media screen and (max-width: 768px) {
 	.contactBody {
-		max-width: 364px;
+		max-width: 100%;
 		box-sizing: border-box;
 	}
 
@@ -166,6 +165,7 @@
 	}
 
 	.contactBody hr {
+	color: rgb(248, 232, 232);
 		width: 120px;
 		margin-bottom: 40px;
 	}
@@ -183,8 +183,9 @@
 
 	.contactBody .cardHoverContainer {
 		position: relative;
-		width: 180px;
-		height: 270px;
+		width: 12rem;
+		height: 18rem;
+		margin-left: 30px;
 	}
 
 	.contactBody .contactFormContainer {
