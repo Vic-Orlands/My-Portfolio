@@ -106,10 +106,13 @@
 	.callActionBody {
 		font-size: 8px;
 		overflow: hidden;
-		margin: 70vh auto;
+		margin: 50vh 0 -200px;
+		padding-bottom: 40px;
+		border-top: 1px solid rgb(202, 182, 182);
+		border-bottom: 1px solid rgb(202, 182, 182);
 	}
 
-		.container .Card {
+	.container .Card {
 		margin: auto;
 	}
 

@@ -114,6 +114,11 @@
 /* --------------------mobile responsiveness------------------------- */
 
 @media screen and (max-width: 768px) {
+	.articlesContainer h3 {
+		font: 16px sans-serif;
+		margin-top: 20px;
+	}
+
 	.artCardContainer {
 		display: flex;
 		justify-content: space-around;

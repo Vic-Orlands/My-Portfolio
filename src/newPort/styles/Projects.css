@@ -79,7 +79,7 @@
 	}
 
 	.projectBounce {
-		margin-bottom: 10vh;
+		margin-bottom: 20px;
 	}
 
 	.projectBounce h1 {
@@ -88,13 +88,14 @@
 	}
 
 	.projectBounce h5 {
-		font-size: .6rem;
+		font-size: .7rem;
 	}
 
 	.projectFiles {
 		margin-left: 10px;
 		margin-bottom: 0px;
 		margin-top: 0px;
+	padding-bottom: 30px;
 	}
 
 	.projectFiles h3 {
@@ -103,18 +104,18 @@
 	}
 
 	.projectFiles p {
-		font-size: .6rem;
+		font-size: .7rem;
 		margin: 5px;
 	}
 
 	.projectFiles h6 {
-		font-size: .6rem;
+		font-size: .7rem;
 		margin-top: 15px;
 		margin-bottom: 4px;
 	}
 
 	.projectFiles a {
-		font-size: .55rem;
+		font-size: .6rem;
 	}
 
 	.projectFiles hr {

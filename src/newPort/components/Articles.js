@@ -7,7 +7,7 @@ import 'aos/dist/aos.css';
 
 const Articles = () => {
 	useEffect(() => {
-		Aos.init({ duration: 2000 });
+		Aos.init({ duration: 1000 });
 	}, []);
 	return (
 		<section className="articlesContainer">

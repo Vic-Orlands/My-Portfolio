@@ -5,7 +5,7 @@ import '../styles/Projects.css';
 
 const Projects = () => {
   useEffect(() => {
-    Aos.init({duration: 2000})
+    Aos.init({duration: 1000})
   }, [])
 	return (
 		<div className="projectBody" id="projectBody">

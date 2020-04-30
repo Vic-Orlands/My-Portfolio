@@ -70,21 +70,21 @@
 
 @media screen and (max-width: 768px) {
 	.exploreBody {
-		margin-top: 25px;
-		max-width: 364px;
+		margin: 0px;
+		border-bottom: 1px solid rgb(202, 182, 182);
 	}
 
 	.overlay {
-		height: 100vh;
+		height: 50vh;
 	}
 
 	.overlay p {
-		font-size: 4.5rem;
-		top: 30%;
+		font-size: 4.6rem;
+		top: 50%;
 	}
 
 	.myBtn {
-		top: 30%;
+		top: 50%;
 	}
 
 	.button {

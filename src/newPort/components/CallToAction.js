@@ -5,7 +5,7 @@ import '../styles/CallToAction.css';
 
 const CallToAction = () => {
 	useEffect(() => {
-		Aos.init({ duration: 1500, easing: 'ease-in-out' });
+		Aos.init({ duration: 1000, easing: 'ease-out' });
 	}, []);
 	return (
 		<section className="callActionBody" id="callActionBody">
