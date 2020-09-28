@@ -1,0 +1,91 @@
+*,
+*:before,
+*:after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	width: 100%;
+	height: 100vh;
+	background-color: black;
+}
+
+#logo {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#logo mask {
+	animation: fill 0.6s ease forwards 3s;
+}
+
+#logo #key1 {
+	stroke-dasharray: 565.95px;
+	stroke-dashoffset: 565.95px;
+	animation: line-anime 2s ease forwards;
+}
+
+#logo #key2 {
+	stroke-dasharray: 549.1px;
+	stroke-dashoffset: 549.1px;
+	animation: line-anime 2s ease forwards 0.3s;
+}
+
+#logo #key3 {
+	stroke-dasharray: 297.2px;
+	stroke-dashoffset: 297.2px;
+	animation: line-anime 2s ease forwards 0.6s;
+}
+
+#logo #key4 {
+	stroke-dasharray: 490.3px;
+	stroke-dashoffset: 490.3px;
+	animation: line-anime 2s ease forwards 0.9s;
+}
+
+#logo #key5 {
+	stroke-dasharray: 605px;
+	stroke-dashoffset: 605px;
+	animation: line-anime 2s ease forwards 1.2s;
+}
+
+#logo #key6 {
+	stroke-dasharray: 571.5px;
+	stroke-dashoffset: 571.5px;
+	animation: line-anime 2s ease forwards 1.5s;
+}
+
+#logo #key7 {
+	stroke-dasharray: 494px;
+	stroke-dashoffset: 494px;
+	animation: line-anime 2s ease forwards 1.8s;
+}
+
+@keyframes line-anime {
+	to {
+		stroke-dashoffset: 0;
+	}
+}
+
+@keyframes fill {
+	from {
+		fill: transparent;
+		fill-opacity: 0.6;
+	}
+	to {
+		fill: #ffffff;
+		fill-opacity: 1;
+	}
+}
+
+/* --------------------mobile responsiveness------------------------- */
+
+@media screen and (max-width: 768px) {
+	#logo {
+		width: 350px;
+	}
+}

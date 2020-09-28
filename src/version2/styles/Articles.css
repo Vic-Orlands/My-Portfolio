@@ -1,0 +1,168 @@
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.articlesContainer {
+	background-color: #111111;
+	width: 100%;
+	color: #808085;
+}
+
+.articlesContainer h3 {
+	font: 38px sans-serif;
+	padding-top: 40px;
+	letter-spacing: 1px;
+	color: #ffffff;
+}
+
+.articlesContainer hr {
+	margin: 12px auto 30px;
+	width: 150px;
+	background-color: rgb(255, 179, 0);
+}
+
+.artCardContainer {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	margin: auto;
+	width: 1000px;
+	position: relative;
+}
+
+.artCard {
+	position: relative;
+}
+
+.artCard .topFace {
+	width: 300px;
+	height: 200px;
+	position: relative;
+	background: #333;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1;
+	transition: 0.5s;
+	transform: translateY(100px);
+}
+
+.artCard:hover .topFace {
+	background: #ff0057;
+	transform: translateY(0px);
+}
+
+.artCard .topFace .content {
+	opacity: 0.4;
+	transition: 0.5s;
+}
+
+.artCard:hover .topFace .content {
+	opacity: 1;
+}
+
+.artCard .topFace .content img {
+	max-width: 200px;
+	margin-top: 15px;
+	margin-bottom: 10px;
+}
+
+.artCard .topFace .content h3 {
+	font: bold 16px sans-serif;
+	color: #fff;
+	margin-top: 0px;
+}
+
+.artCard .bottomFace {
+	width: 300px;
+	height: 200px;
+	position: relative;
+	background: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+	/* box-shadow: 0 20px 50px yellow; */
+	transform: translateY(-100px);
+	transition: 0.5s;
+}
+
+.artCard:hover .bottomFace {
+	transform: translateY(0px);
+}
+
+.artCard .bottomFace .content p {
+	color: #333;
+	font: 14px sans-serif;
+	line-height: 18px;
+	letter-spacing: .3px;
+}
+
+.artCard .bottomFace .content a {
+	text-decoration: none;
+	color: #333;
+	font-weight: 600;
+	letter-spacing: .2px;
+	border: 1px solid #333;
+	padding: 8px;
+	display: inline-block;
+	margin: 17px 0 0;
+}
+
+.artCard .bottomFace .content a:hover {
+	background: #333;
+	color: #fff;
+}
+
+/* --------------------mobile responsiveness------------------------- */
+
+@media screen and (max-width: 768px) {
+	.articlesContainer {
+		padding-bottom: 15px;
+	}
+
+	.articlesContainer h3 {
+		font: 24px sans-serif;
+		padding-top: 20px;
+		margin-bottom: 0px;
+	}
+
+	.articlesContainer hr {
+		margin: 0px auto 10px;
+		width: 100px;
+	}
+
+	.artCardContainer {
+		display: flex;
+		width: 100%;
+		flex-direction: column;
+	}
+
+	.artCardContainer .artCard {
+		margin: 0 auto;
+	}
+
+	.artCard .topFace .content img {
+		margin-bottom: 5px;
+	}
+
+	.artCard .topFace .content h3 {
+		margin-top: 0px;
+	}
+
+	.artCard .bottomFace .content p {
+		font: 12px sans-serif;
+		line-height: 18px;
+		letter-spacing: .2px;
+	}
+
+	.artCard .bottomFace .content a {
+		font-size: 14px;
+		padding: 4px 6px;
+		margin: 5px 0 0;
+		letter-spacing: 0px;
+	}
+}

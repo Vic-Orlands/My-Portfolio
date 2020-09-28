@@ -2,8 +2,9 @@ import 'bootstrap/dist/css/bootstrap.css';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import * as serviceWorker from './serviceWorker';
-import Portfolio from "./newPort/components/Portfolio";
+// import App from './version2/components/App';
+import Homepage from './version2/components/Homepage';
 
-ReactDOM.render(<Portfolio />, document.getElementById('root'));
+ReactDOM.render(<Homepage />, document.getElementById('root'));
 
 serviceWorker.register();

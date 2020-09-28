@@ -1,0 +1,154 @@
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.projectBody {
+	background-color: #161616;
+	width: 100%;
+	color: #808085;
+}
+
+.projectBounce {
+	text-align: center;
+	padding-top: 13px;
+	position: relative;
+}
+
+.projectBounce h1 {
+	font: 38px sans-serif;
+	margin-top: 20px;
+	margin-bottom: 0px;
+	color: #ffffff;
+}
+
+.projectBounce h5 {
+	font: 16px sans-serif;
+}
+
+.projectFiles {
+	margin: 40px 0 0 100px;
+	padding-bottom: 75px;
+}
+
+.projectFiles h3 {
+	color: #ffffff;
+	font: 26px sans-serif;
+	padding: 10px 0 10px 0;
+	margin-bottom: 0px;
+}
+
+.projectFiles h6 {
+	font: 16px sans-serif;
+	margin: 25px 0 20px 0;
+}
+
+.projectFiles h6 b {
+	font-size: 18px;
+	text-transform: uppercase;
+	color: #ffffff;
+}
+
+.projectFiles p {
+	font: 18px sans-serif;
+	padding: 2px;
+}
+
+.projectBody .projectFiles .hr {
+	margin-top: -10px;
+	margin-bottom: 20px;
+	border: 1.5px solid orange;
+}
+
+.projectBody .projectFiles .one {
+	width: 135px;
+}
+
+.projectBody .projectFiles .two {
+	width: 295px;
+}
+
+.projectFiles div {
+	margin: 0 0 75px 0;
+}
+
+.projectFiles a {
+	text-transform: uppercase;
+	font: bold 14px sans-serif;
+	letter-spacing: .5px;
+	color: rgb(255, 179, 0);
+	border: 1px solid rgb(255, 184, 19);
+	padding: 5px 20px;
+	text-decoration: none;
+}
+
+.projectBody a:hover {
+	background-color: rgb(255, 179, 0);
+	color: #111111;
+	cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+	.projectBody {
+		color: white;
+		margin-bottom: 0px;
+		font-size: 14px;
+		font-family: sans-serif;
+		width: 100%;
+	}
+
+	.projectBounce {
+		margin-bottom: 20px;
+	}
+
+	.projectBounce h1 {
+		font-size: 1rem;
+		margin-bottom: 10px;
+	}
+
+	.projectBounce h5 {
+		font-size: .7rem;
+	}
+
+	.projectFiles {
+		margin-left: 10px;
+		margin-bottom: 0px;
+		margin-top: 0px;
+		padding-bottom: 30px;
+	}
+
+	.projectFiles h3 {
+		font-size: 1rem;
+		margin-bottom: 0px;
+	}
+
+	.projectFiles p {
+		font-size: .7rem;
+		margin: 5px;
+	}
+
+	.projectFiles h6 {
+		font-size: .7rem;
+		margin-top: 15px;
+	}
+
+	.projectFiles a {
+		font-size: .6rem;
+	}
+
+	.projectFiles hr {
+		margin-top: 0px;
+		margin-bottom: 15px;
+	}
+
+	.projectBody .projectFiles .one {
+		width: 23%;
+	}
+
+	.projectBody .projectFiles .two {
+		width: 51%;
+	}
+}

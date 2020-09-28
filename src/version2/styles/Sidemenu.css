@@ -1,0 +1,116 @@
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.sidemenu {
+    background: #000000;
+    position: fixed;
+    height: 100vh;
+    width: 25%;
+    padding: 50px 0;
+}
+
+.sidemenu h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 55px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    padding: 0 40px;
+    color: rgb(196, 195, 195);
+}
+
+.sidemenu ul li {
+    list-style: none;
+    padding: 0 0 15px 40px;
+    text-transform: uppercase;
+    font: thin 16px sans-serif;
+    color: #878790;
+    cursor: pointer;
+}
+
+.sidemenu ul li::before {
+    content: "";
+	position: absolute;
+	height: 1.8px;
+	background-color: rgb(255, 179, 0);
+    transition: .8s;
+    width: 0;
+    overflow: hidden;
+}
+
+.sidemenu ul #li-1::before {
+    bottom: 596px;
+}
+
+.sidemenu ul #li-1:hover::before {
+    width: 48px;
+    bottom: 596px;
+}
+
+.sidemenu ul #li-2::before {
+    bottom: 558px;
+}
+
+.sidemenu ul #li-2:hover::before {
+    width: 85px;
+    bottom: 558px;
+}
+
+.sidemenu ul #li-3::before {
+    bottom: 519px;
+}
+
+.sidemenu ul #li-3:hover::before {
+    width: 77px;
+    bottom: 519px;
+}
+
+.sidemenu ul #li-4::before {
+    bottom: 479px;
+}
+
+.sidemenu ul #li-4:hover::before {
+    width: 53px;
+    bottom: 479px;
+}
+
+.sidemenu ul #li-5::before {
+    bottom: 441px;
+}
+
+.sidemenu ul #li-5:hover::before {
+    width:73px;
+    bottom: 441px;
+}
+
+.sidemenu ul li:focus,
+.sidemenu ul li:active,
+.sidemenu ul li:hover {
+    color: rgb(255, 179, 0);
+}
+
+.sidemenu footer {
+    position: absolute;
+    bottom: 0;
+}
+
+.sidemenu footer p {
+    font-size: 18px;
+    letter-spacing: .5px;
+    color: #878790;
+    text-align: center;
+    padding: 0 10px;
+}
+
+
+/* --------------------mobile responsiveness------------------------- */
+
+@media screen and (max-width: 768px) {
+    .sidemenu {
+        display: none;
+    }
+}
