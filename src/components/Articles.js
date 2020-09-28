@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import { FaHeart } from 'react-icons/fa';
 import '../styles/Articles.css';
 
 import Aos from 'aos';
