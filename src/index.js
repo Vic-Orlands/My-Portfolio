@@ -2,9 +2,8 @@ import 'bootstrap/dist/css/bootstrap.css';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import * as serviceWorker from './serviceWorker';
-// import App from './version2/components/App';
-import Homepage from './version2/components/Homepage';
+import App from './components/App';
 
-ReactDOM.render(<Homepage />, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById('root'));
 
 serviceWorker.register();
