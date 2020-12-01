@@ -8,7 +8,7 @@ const App = () => {
 	useEffect(() => {
 		setTimeout(() => {
 			setIsLoading(false);
-		}, 0);
+		}, 5000);
 	});
 
 	return <body>{isLoading ? <Welcome /> : <Homepage />}</body>;
