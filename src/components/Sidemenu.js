@@ -8,11 +8,21 @@ const Sidemenu = () => {
 			<h1>Portfolio</h1>
 
 			<ul>
-				<li id="li-1">home</li>
-				<li id="li-2">projects</li>
-				<li id="li-3">articles</li>
-				<li id="li-4">about</li>
-				<li id="li-5">contact</li>
+				<li id="li-1">
+					<a href="#home">home</a>
+				</li>
+				<li id="li-2">
+					<a href="#projectBody">projects</a>
+				</li>
+				<li id="li-3">
+					<a href="#article">articles</a>
+				</li>
+				<li id="li-4">
+					<a href="#about">about</a>
+				</li>
+				<li id="li-5">
+					<a href="#contact">contact</a>
+				</li>
 			</ul>
 
 			<footer>

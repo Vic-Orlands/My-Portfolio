@@ -10,27 +10,27 @@ const Homepage = () => {
 		<main>
 			<Sidemenu />
 
-			<section className="homeBody">
-                <div className="home">
+			<section className="homeBody" id="home">
+				<div className="home">
+					<div id="homeImage">
+						<div className="homeImageTexts">
+							<h3>hello, i'm...</h3>
+							<h1>
+								Innocent Chimezie <br /> Victor
+							</h1>
 
-				<div id="homeImage">
-					<div className="homeImageTexts">
-						<h3>hello, i'm...</h3>
-						<h1>
-							Innocent Chimezie <br /> Victor
-						</h1>
-
-						<p>
-							A humble developer that specializes in frontend but <br /> delves a little into backend and
-							sometimes technical <br /> writing. An adept pes lover and not your regular christian.{' '}
-						</p>
+							<p>
+								A humble developer that specializes in frontend but <br /> delves a little into backend
+								and sometimes technical <br /> writing. An adept pes lover and not your regular
+								christian.{' '}
+							</p>
+						</div>
+						<h2>See More</h2>
 					</div>
-					<h2>See More</h2>
 				</div>
-                </div>
 
 				<Projects />
-                <Articles />
+				<Articles />
 				<Contact />
 			</section>
 		</main>

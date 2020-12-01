@@ -85,69 +85,63 @@
 /* --------------------mobile responsiveness------------------------- */
 
 @media screen and (max-width: 768px) {
- .homeBody {
-	width:100%;
-	clear: both;
-}
+	.homeBody {
+		width: 100%;
+		clear: both;
+	}
 
-.homeBody .home {
-	padding: 0;
-}
+	.homeBody .home {
+		padding: 0;
+	}
 
-.homeBody #homeImage {
-	height: 100vh;
-	width: 100%;
-	opacity: 0.65;
-	background: black url("../assets/homeImage.jpg") no-repeat ;
-	background-size: cover;
-	background-blend-mode:luminosity;
-}
+	.homeBody #homeImage {
+		height: 100vh;
+		width: 100%;
+		opacity: 0.65;
+		background: black url("../assets/homeImage.jpg") no-repeat;
+		background-size: cover;
+		background-blend-mode: luminosity;
+	}
 
-.homeBody #homeImage .homeImageTexts {
-	position: absolute;
-	right: 0;
-	top: 50%;
-	padding: 0 30px;
-}
+	.homeBody #homeImage .homeImageTexts {
+		position: relative;
+		right: 0;
+		top: 60%;
+		padding: 20px;
+		background-color: #11111180;
+		border: 1px solid rgb(255, 184, 19);
+		margin: 0 30px;
+	}
 
-.homeBody #homeImage .homeImageTexts h3 {
-	color: #ffffff;
-	font: bold 12px sans-serif;
-}
+	.homeBody #homeImage .homeImageTexts h3 {
+		color: #ffffff;
+	}
 
-.homeBody #homeImage .homeImageTexts h1 {
-	font: bold 30px sans-serif;
-	letter-spacing: 2px;
-	margin-bottom: 10px;
-}
+	.homeBody #homeImage .homeImageTexts h1 {
+		font: bold 28px sans-serif;
+		letter-spacing: 2px;
+		margin-bottom: 10px;
+	}
 
-.homeBody #homeImage .homeImageTexts p {
-	color: #ffffff;
-	margin-left: 20px;
-	margin-bottom: 10px;
-	font-size: 12px;
-}
+	.homeBody #homeImage .homeImageTexts p {
+		color: rgb(255, 184, 19);
+		margin-left: 20px;
+		font-size: 14px;
+	}
 
-.homeBody #homeImage .homeImageTexts p::before {
-	content: "";
-	position: absolute;
-	bottom: 15px;
-	height: 30%;
-	border: 1.8px solid rgb(255, 179, 0);
-	margin-left: -15px;
-}
+	.homeBody #homeImage .homeImageTexts p::before {
+		content: "";
+		top: 58%;
+		margin-top: -10px;
+	}
 
-.homeBody #homeImage h2 {
-	position: absolute;
-	right: 205px;
-	top: 85%;
-	font: bold 14px sans-serif;
-	letter-spacing: .5px;
-}
+	.homeBody #homeImage h2 {
+		display: none;
+	}
 
-.homeBody #homeImage h2:hover {
-	background-color: rgb(255, 179, 0);
-	color: #111111;
-	cursor: pointer;
-}
+	.homeBody #homeImage h2:hover {
+		background-color: rgb(255, 179, 0);
+		color: #111111;
+		cursor: pointer;
+	}
 }

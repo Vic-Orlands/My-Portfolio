@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import Welcome from './Welcome';
-import Portfolio from './Portfolio';
+import Welcome from './components/Welcome';
+import Homepage from './components/Homepage';
 
 const App = () => {
 	const [ isLoading, setIsLoading ] = useState(true);
@@ -8,9 +8,9 @@ const App = () => {
 	useEffect(() => {
 		setTimeout(() => {
 			setIsLoading(false);
-		}, 5000);
+		}, 0);
 	});
 
-	return <body>{isLoading ? <Welcome /> : <Portfolio />}</body>;
+	return <body>{isLoading ? <Welcome /> : <Homepage />}</body>;
 };
 export default App;

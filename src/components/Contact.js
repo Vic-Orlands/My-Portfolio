@@ -2,14 +2,15 @@ import React, { Component } from 'react';
 import ContactRobo from '../assets/contact.svg';
 import '../styles/Contact.css';
 
-import { FaTwitter, FaLinkedin, FaGithub, FaDev, FaMedium, FaPhoneAlt } from 'react-icons/fa';
+import { FaTwitter, FaLinkedin, FaGithub, FaDev, FaPhoneAlt } from 'react-icons/fa';
 import { ImLocation } from 'react-icons/im';
 import { IoIosSend, IoIosHand } from 'react-icons/io';
+import { SiHashnode } from 'react-icons/si';
 
 class Contact extends Component {
 	render() {
 		return (
-			<section className="contact">
+			<section className="contact" id="contact">
 				<section className="leftSide">
 					<h2>Let's get in touch</h2>
 					<h5>I am open for any suggestion or just to have a chat</h5>
@@ -29,26 +30,43 @@ class Contact extends Component {
 							<b>Email:</b> chimezieinnocent39@gmail.com
 						</li>
 						<li>
-							<FaTwitter id="font" />
-							Political Developer (@Vic_Orlands)
+							<a href="https://twitter.com/Vic_Orlands">
+								<FaTwitter id="font" />
+							</a>
+							Geek (@Vic_Orlands)
 						</li>
 
 						<li>
-							<FaLinkedin id="font" />
+							<a href="https://www.linkedin.com/in/victor-innocent/">
+								<FaLinkedin id="font" />
+							</a>
 							Victor Innocent
 						</li>
 
 						<li>
-							<FaGithub id="font" />
+							<a href="https://github.com/Vic-Orlands">
+								<FaGithub id="font" />
+							</a>
 							Vic-Orlands
 						</li>
 						<li>
 							<FaDev id="font" />
+							<a href="https://dev.to/geekjs">
+								<img
+									src="https://d2fltix0v2e0sb.cloudfront.net/dev-badge.svg"
+									alt="Vic-Orlands's DEV Profile"
+									height="30"
+									width="30"
+									style={{ marginRight: 6 }}
+								/>
+							</a>
 							Vic-Orlands
 						</li>
 						<li>
-							<FaMedium id="font" />
-							Vic-Orlands
+							<a href="https://hashnode.com/@Orlands">
+								<SiHashnode id="font" />
+							</a>
+							Orlands
 						</li>
 					</ul>
 				</section>
@@ -58,7 +76,11 @@ class Contact extends Component {
 						svg-animation
 					</object>
 					<center>
-						<p><i>Caio <IoIosHand id="handFont" /> </i></p>
+						<p>
+							<i>
+								Caio <IoIosHand id="handFont" />{' '}
+							</i>
+						</p>
 					</center>
 				</section>
 			</section>

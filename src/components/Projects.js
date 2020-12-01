@@ -18,25 +18,26 @@ const Projects = () => {
 				<div data-aos="zoom-in" className="projectFiles">
 					<h3>PROJECTS</h3>
 					<hr className="hr one" />
-					<p> A Todo App </p>
-					<p>A fully functional School Management App </p>
-					<p> A real-time movie search App </p>
-					<p> A real-time world news website </p>
+					<p>* A Todo App </p>
+					<p>* A fully functional School Management App with vanilla JavaScript </p>
+					<p>* A real-time movie search App </p>
+					<p>* A real-time world news website </p>
 					<p>
-						A Lifescore App that displays matches played or to be played with their match-times and scores.
+						* A Lifescore App that displays matches played or to be played with their match-times and
+						scores.
 					</p>
-                    		<p>
-						A automated data-recharge site
-					</p>
+					<p>* A automated data-recharge site</p>
 					<p>
-						Geo-Search-a website that shows you the weather condition, map and images of any place in the
+						* Geo-Search-a website that shows you the weather condition, map and images of any place in the
 						world
 					</p>
-					<p>A photographer's site</p>
+					<p>* A photographer's site</p>
+					<p>* An E-commerce site with a checkout system using Stripe</p>
+					<p>* An Interior decoration site</p>
 					<h6>
 						{' '}
-						<b>Skills:</b> React, React-Native, HTML5, CSS3, Javascript, Git and GitHub, GitHub Pages, Netlify, Surge, GitHub
-						Project Management Board.
+						<b>Skills:</b> React, React-Native, HTML5, CSS3, Javascript, Tailwind css, Git and GitHub,
+						GitHub Pages, Netlify, Surge, GitHub Project Management Board.
 					</h6>
 					<a href="https://github.com/Vic-Orlands"> View more in github </a>
 				</div>
@@ -50,7 +51,7 @@ const Projects = () => {
 						Taught teenagers and Secondary School teachers how to be Safer Online, a Google programme still
 						under the above administration.
 					</p>
-					<p> Taught html and css to beginners </p>
+					<p> Taught html and css to beginner developers </p>
 				</div>
 			</div>
 		</div>

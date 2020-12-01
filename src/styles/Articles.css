@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
 *,
 *::before,
 *::after {
@@ -13,7 +15,8 @@
 }
 
 .articlesContainer h3 {
-	font: 38px sans-serif;
+	font-size: 38px;
+	font-family: 'Poppins', sans-serif;
 	padding-top: 40px;
 	letter-spacing: 1px;
 	color: #ffffff;
@@ -29,6 +32,7 @@
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	margin: auto;
+	padding-bottom: 30px;
 	width: 1000px;
 	position: relative;
 }
@@ -71,7 +75,9 @@
 }
 
 .artCard .topFace .content h3 {
-	font: bold 16px sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	font-family: 'Poppins', sans-serif;
 	color: #fff;
 	margin-top: 0px;
 }
@@ -85,7 +91,6 @@
 	justify-content: center;
 	align-items: center;
 	padding: 20px;
-	/* box-shadow: 0 20px 50px yellow; */
 	transform: translateY(-100px);
 	transition: 0.5s;
 }
@@ -97,7 +102,6 @@
 .artCard .bottomFace .content p {
 	color: #333;
 	font: 14px sans-serif;
-	line-height: 18px;
 	letter-spacing: .3px;
 }
 
@@ -115,6 +119,10 @@
 .artCard .bottomFace .content a:hover {
 	background: #333;
 	color: #fff;
+}
+
+.articlesContainer .mobile-view {
+	display: none;
 }
 
 /* --------------------mobile responsiveness------------------------- */
@@ -136,33 +144,27 @@
 	}
 
 	.artCardContainer {
-		display: flex;
-		width: 100%;
-		flex-direction: column;
+		display: none;
 	}
 
-	.artCardContainer .artCard {
-		margin: 0 auto;
-	}
+.articlesContainer .mobile-view {
+	display: block;
+	padding: 0 20px;
+}
 
-	.artCard .topFace .content img {
-		margin-bottom: 5px;
-	}
+.articlesContainer .mobile-view h3 {
+	font-size: 16px;
+	font-family: 'Poppins', sans-serif;
+	margin-bottom: 10px;
+}
 
-	.artCard .topFace .content h3 {
-		margin-top: 0px;
-	}
+.articlesContainer .mobile-view a {
+	font-size: 12px;
+	font-family: 'Poppins', sans-serif;
+	color: rgb(255, 179, 0);
+	border: 1px solid rgb(255, 179, 0);
+	padding: 4px 8px;
+	text-decoration: none;
+}
 
-	.artCard .bottomFace .content p {
-		font: 12px sans-serif;
-		line-height: 18px;
-		letter-spacing: .2px;
-	}
-
-	.artCard .bottomFace .content a {
-		font-size: 14px;
-		padding: 4px 6px;
-		margin: 5px 0 0;
-		letter-spacing: 0px;
-	}
 }

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
 *,
 *::before,
 *::after {
@@ -11,8 +13,8 @@
 	width: 100%;
 	color: #808085;
 	display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+	justify-content: space-between;
+	flex-wrap: wrap;
 	padding: 0 0 0 40px;
 }
 
@@ -25,122 +27,127 @@
 }
 
 .contact .leftSide h2 {
-	font: 28px sans-serif;
-    margin-bottom: 15px;
-    letter-spacing: 1px;
-    word-spacing: 2px;
+	font-size: 28px;
+	font-family: 'Poppins', sans-serif;
+	margin-bottom: 15px;
+	letter-spacing: 1px;
+	word-spacing: 2px;
 }
 
 .contact .leftSide h5 {
-	font: 17px sans-serif;
+	font-size: 17px;
+	font-family: 'Poppins', sans-serif;
+	font-weight: normal;
 	line-height: 25px;
 	color: #333333ea;
-    margin-bottom: 30px;
-    letter-spacing: .5px;
+	margin-bottom: 30px;
+	letter-spacing: .5px;
 }
 
 .contact .leftSide .fonts li {
-    list-style: none;
-    margin-bottom: 15px;
-    font: lighter 14px sans-serif;
+	list-style: none;
+	margin-bottom: 15px;
+	font-size: 14px;
+	font-weight: normal;
+	font-family: 'Poppins', sans-serif;
 	color: #333333ea;
-    letter-spacing: .5px;
 }
 
 .contact .leftSide .fonts li #font {
 	border: 1px solid #57565636;
-    border-radius: 50%;
-    font-size: 46px;
-    padding: 12px;
-    margin-right: 10px;
-    color: #000000;
+	border-radius: 50%;
+	font-size: 46px;
+	padding: 12px;
+	margin-right: 10px;
+	color: #000000;
 }
 
 .contact .leftSide .fonts li #font:hover {
-    border: 1px solid #000000; 
-    background-color: #000000;
-    color: #ffce3b;
+	border: 1px solid #000000;
+	background-color: #000000;
+	color: #ffce3b;
 }
 
 .contact .leftSide .fonts li b {
-    font: bold 15px sans-serif;
-    color: #000000;
+	font: bold 15px sans-serif;
+	color: #000000;
 }
 
 .contact .rightSide {
-    width: 750px;
-    height: 100vh;
+	width: 750px;
+	height: 100vh;
 }
 
 .contact .rightSide object {
-    width: 100%;
-    height: 100%;
+	width: 100%;
+	height: 100%;
 }
 
 .contact .rightSide center {
-    display: none;
+	display: none;
 }
 
 /* --------------------mobile responsiveness------------------------- */
 
 @media screen and (max-width: 768px) {
-   .contact {
-	padding: 20px;
-}
+	.contact {
+		padding: 20px;
+	}
 
-.contact .leftSide {
-	height: 85vh;
-	width: 100%;
-	padding: 30px 10px 0px 25px;
-}
+	.contact .leftSide {
+		height: 85vh;
+		width: 100%;
+		padding: 30px 10px 0px 25px;
+	}
 
-.contact .leftSide h2 {
-	font: 24px sans-serif;
-    margin-bottom: 10px;
-    word-spacing: 0px;
-}
+	.contact .leftSide h2 {
+		font-size: 24px;
+		font-family: 'Poppins', sans-serif;
+		margin-bottom: 10px;
+		word-spacing: 0px;
+	}
 
-.contact .leftSide h5 {
-	font: 14px sans-serif;
-	line-height: 20px;
-    margin-bottom: 20px;
-}
+	.contact .leftSide h5 {
+		font-size: 14px;
+		font-family: 'Poppins', sans-serif;
+		line-height: 20px;
+		margin-bottom: 20px;
+	}
 
-.contact .leftSide .fonts li {
-    margin-bottom: 10px;
-    letter-spacing: 0px;
-}
+	.contact .leftSide .fonts li {
+		margin-bottom: 10px;
+		letter-spacing: 0px;
+	}
 
-.contact .leftSide .fonts li:nth-child(3) {
-    font-size: 12px;
-}
+	.contact .leftSide .fonts li #font {
+		font-size: 40px;
+		padding: 11px;
+	}
 
-.contact .leftSide .fonts li #font {
-    font-size: 40px;
-    padding: 11px;
-}
+	.contact .leftSide .fonts li b {
+		font-size: 14px;
+		font-weight: bold;
+		font-family: 'Poppins', sans-serif;
+	}
 
-.contact .leftSide .fonts li b {
-    font: bold 14px sans-serif;
-}
+	.contact .rightSide {
+		width: 100%;
+		height: 50vh;
+	}
 
-.contact .rightSide {
-    width: 100%;
-    height: 50vh;
-}
+	.contact .rightSide center {
+		display: block;
+	}
 
-.contact .rightSide center {
-    display: block;
-}
+	.contact .rightSide center p {
+		font-size: 20px;
+		font-family: 'Poppins', sans-serif;
+		letter-spacing: 1px;
+		margin-top: -40px;
+		color: #ffce3b;
+	}
 
-.contact .rightSide center p {
-    font-size: 20px;
-    letter-spacing: 1px;
-    margin-top: -40px;
-    color: #ffce3b;
-}
-
-.contact .rightSide center p #handFont {
-    margin-left: -6px;
-}
+	.contact .rightSide center p #handFont {
+		margin-left: -6px;
+	}
 }
