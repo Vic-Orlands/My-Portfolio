@@ -17,9 +17,6 @@ const Sidemenu = () => {
 				<li id="li-3">
 					<a href="#article">articles</a>
 				</li>
-				<li id="li-4">
-					<a href="#about">about</a>
-				</li>
 				<li id="li-5">
 					<a href="#contact">contact</a>
 				</li>
