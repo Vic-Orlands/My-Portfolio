@@ -1,0 +1,758 @@
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+/* <--------defining dark and light themes styles starts here-------->*/
+
+:root {
+	--ON: initial;
+	--OFF: ;
+}
+
+.theme-default {
+	--default: var(--ON);
+	--light: var(--OFF);
+	--dark: var(--OFF);
+}
+
+.theme-light {
+	--light: var(--ON);
+	--dark: var(--OFF);
+	--default: var(--OFF);
+}
+
+.theme-dark {
+	--dark: var(--ON);
+	--light: var(--OFF);
+	--default: var(--OFF);
+}
+
+:root {
+	/* Define each variable in their light and dark mode */
+	--main-text-color: var(--default, #000000) var(--light, rgb(27, 56, 23)) var(--dark, #acacac);
+	--main-bg-color: var(--default, #ffffff) var(--light, #d2e4d6) var(--dark, #1f0909);
+	--main-header-color: var(--default, rgb(1, 45, 50)) var(--light, rgb(1, 45, 50)) var(--dark, rgb(255, 255, 255));
+	--secondary-bg-color: var(--default, rgb(216, 174, 141)) var(--light, rgba(0, 0, 0, 0.116)) var(--dark, #745858);
+	--secondary-text-color: var(--default, rgb(0, 32, 36)) var(--light, #142a18) var(--dark, #1f0909);
+}
+
+/* <--------defining dark and light themes styles ends here-------->*/
+
+body {
+	font-size: 17px;
+	background-color: var(--main-bg-color);
+	color: var(--main-text-color);
+}
+
+h1,
+h4,
+h3 {
+	display: block;
+}
+
+a {
+	text-decoration: none;
+}
+
+.top-body {
+	font-size: 2rem;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+
+.top-body:before {
+	content: "";
+	position: absolute;
+	background-color: var(--secondary-bg-color);
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 47.8%;
+}
+
+.top-body article {
+	z-index: 1;
+	padding-left: 150px;
+}
+
+.top-body article p {
+	font-size: .5em;
+	padding-left: .2rem;
+	margin-bottom: 0;
+}
+
+.top-body article h1 {
+	font-size: 2em;
+	text-transform: capitalize;
+	line-height: 75px;
+}
+
+.top-body article h3 {
+	font-size: .7em;
+	padding-left: .2rem;
+	margin-bottom: .3rem;
+}
+
+.second-page {
+	min-height: 100vh;
+	padding: 1rem 3rem;
+	font-size: 1rem;
+	position: relative;
+}
+
+.second-page .second-page-divider,
+.third-page .third-page-divider,
+.fourth-page .fourth-page-divider {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	overflow: hidden;
+	line-height: 0;
+}
+
+.second-page .second-page-divider svg,
+.third-page .third-page-divider svg,
+.fourth-page .fourth-page-divider svg {
+	position: relative;
+	display: block;
+	width: calc(148% + 1.3px);
+	height: 178px;
+	transform-origin: bottom;
+	animation: animateWave 1000ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
+}
+
+.second-page .second-page-divider {
+	fill: var(--secondary-bg-color);
+}
+
+@keyframes animateWave {
+	0% {
+		transform: scale(1, 0);
+	}
+	100% {
+		transform: scale(1, 1);
+	}
+}
+
+.second-page nav {
+	display: flex;
+	justify-content: space-between;
+	background-color: var(--secondary-bg-color);
+	padding: 10px;
+	border-radius: 20px;
+}
+
+.second-page nav a {
+	font-size: 1em;
+	color: var(--main-text-color);
+	font-weight: 700;
+	padding: 0 5px;
+}
+
+.second-page nav section,
+.second-page nav section ul {
+	display: flex;
+	list-style: none;
+}
+
+.second-page nav section a,
+.second-page nav section ul li {
+	margin: 0 0 0 10px;
+	font-weight: normal;
+	cursor: pointer;
+}
+
+.second-page nav section a:hover,
+.second-page nav section ul li:hover {
+	text-decoration: underline;
+}
+
+.second-page .img-intro-section {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: 2rem;
+}
+
+.second-page .img-container {
+	width: 25vw;
+	height: 70vh;
+	background: url("/assets/snr\ dev.jpg") no-repeat right top;
+	margin-right: 30px;
+}
+
+.second-page .img-intro-section .img-intro {
+	width: 40%;
+}
+
+.second-page .img-intro-section .img-intro h3 {
+	font-size: .9em;
+	text-transform: uppercase;
+}
+
+.second-page .img-intro-section .img-intro h2 {
+	font-size: 2.5em;
+	text-transform: uppercase;
+}
+
+.second-page .img-intro-section .img-intro p {
+	font-size: 1.2em;
+	word-spacing: 2px;
+	line-height: 30px;
+	margin-bottom: 30px;
+}
+
+.second-page .img-intro-section .img-intro a {
+	color: var(--main-text-color);
+	border: 1px solid var(--main-text-color);
+	padding: .9rem 1.2rem;
+}
+
+.second-page .img-intro-section .img-intro a:hover {
+	background: var(--main-text-color);
+	color: var(--main-bg-color);
+}
+
+.third-page {
+	padding: 0rem 12rem;
+	font-size: 1rem;
+	background-color: var(--secondary-bg-color);
+	color: var(--secondary-text-color);
+	position: relative;
+}
+
+.third-page header h2 {
+	font-size: 2em;
+	text-transform: uppercase;
+	margin-bottom: 0;
+}
+
+.third-page header h6 {
+	font-size: 1.3em;
+}
+
+.third-page .project {
+	display: flex;
+	border-bottom: 1px dashed var(--secondary-text-color);
+	padding: 4rem 0;
+}
+
+.third-page .project .img {
+	width: 72vw;
+	height: 35vh;
+}
+
+.third-page .one:hover .img,
+.third-page .two:hover .img,
+.third-page .three:hover .img,
+.third-page .four:hover .img,
+.third-page .five:hover .img,
+.third-page .six:hover .img {
+	background-blend-mode: normal;
+	cursor: crosshair;
+}
+
+.third-page .project:nth-child(odd) .img {
+	margin-left: 50px;
+}
+
+.third-page .project:nth-child(even) .img {
+	margin-right: 50px;
+}
+
+.third-page .project:nth-child(odd) {
+	flex-direction: row-reverse;
+}
+
+.third-page .project .img {
+	background: #504e4e url("./assets/q-top.png") no-repeat center;
+	background-size: cover;
+	background-blend-mode: soft-light;
+}
+
+.third-page .project .description {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.third-page .project .description h3 {
+	font-size: 1.6em;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+	color: var(--main-header-color);
+}
+
+.third-page .project .description p {
+	font-size: 1.2em;
+	word-spacing: 2px;
+	line-height: 25px;
+	flex-grow: 1;
+}
+
+.third-page .project .description ul {
+	display: flex;
+	margin-top: .5rem;
+	padding-left: 20px;
+	margin-bottom: 1rem;
+}
+
+.third-page .project .description ul li {
+	margin-right: 40px;
+}
+
+.third-page .project .description a {
+	color: var(--secondary-text-color);
+	border: 1px solid var(--secondary-text-color);
+	padding: .7rem 1.2rem;
+	align-self: flex-start;
+}
+
+.third-page .project .description a:hover {
+	background: var(--main-bg-color);
+	color: var(--main-text-color);
+}
+
+.third-page .two .img {
+	background: #504e4e url("./assets/photography.png") no-repeat center;
+	background-size: cover;
+	background-blend-mode: soft-light;
+}
+
+.third-page .three .img {
+	background: #504e4e url("./assets/schoolapp.jpg") no-repeat center;
+	background-size: cover;
+	background-blend-mode: soft-light;
+}
+
+.third-page .four .img {
+	background: #504e4e url("./assets/interior.png") no-repeat center;
+	background-size: cover;
+	background-blend-mode: soft-light;
+}
+
+.third-page .five .img {
+	background: #504e4e url("./assets/portfolio.png") no-repeat center;
+	background-size: cover;
+	background-blend-mode: soft-light;
+}
+
+.third-page .six {
+	border-bottom: none;
+}
+
+.third-page .six .img {
+	background: #504e4e url("./assets/portfolio=v3.png") no-repeat center;
+	background-size: cover;
+	background-blend-mode: soft-light;
+	border: 1px solid var(--secondary-bg-color);
+}
+
+.third-page .third-page-divider {
+	fill: var(--main-bg-color);
+}
+
+.third-page .six .description #jemima-link {
+	text-decoration: underline;
+	text-decoration-color: var(--secondary-bg-color);
+	padding: 0;
+	border: none;
+	text-decoration-style: double;
+}
+
+/* <--------fourth-page style starts here------> */
+.fourth-page {
+	font-size: 1rem;
+	background-color: var(--main-bg-color);
+	color: var(--main-text-color);
+	padding: 0rem 12rem 4rem 12rem;
+	position: relative;
+}
+
+.fourth-page .fourth-page-divider {
+	fill: var(--secondary-bg-color);
+}
+
+.fourth-page header h2 {
+	font-size: 2em;
+	text-transform: uppercase;
+	margin-bottom: 0;
+}
+
+.fourth-page header h6 {
+	font-size: 1.3em;
+}
+
+.artCardContainer {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 35px;
+	width: 100%;
+	margin-top: 20px;
+}
+
+.artCard {
+	position: relative;
+	width: 100%;
+}
+
+.artCard .topFace {
+	width: 100%;
+	height: 250px;
+	position: relative;
+	background-color: var(--secondary-bg-color);
+	color: var(--secondary-text-color);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1;
+	transition: 0.5s;
+	transform: translateY(100px);
+}
+
+.artCard:hover .topFace {
+	transform: translateY(0px);
+	border: 1px solid var(--main-text-color);
+}
+
+.artCard .topFace .content {
+	transition: 0.5s;
+}
+
+.artCard .topFace .content h3 {
+	opacity: 1;
+	font-size: 1.5em;
+}
+
+.artCard .bottomFace {
+	width: 100%;
+	height: 240px;
+	position: relative;
+	background: var(--main-bg-color);
+	color: var(--main-text-color);
+	display: flex;
+	align-items: center;
+	padding: 20px;
+	transform: translateY(-145px);
+	transition: 0.5s;
+	border: 1px solid var(--main-text-color);
+	border-top: none;
+	opacity: 0;
+}
+
+.artCard:hover .bottomFace {
+	transform: translateY(0px);
+	opacity: 1;
+}
+
+.artCard .bottomFace .content p {
+	font-size: .9em;
+	letter-spacing: .3px;
+}
+
+.artCard .bottomFace .content a {
+	text-decoration: none;
+	color: var(--main-header-color);
+	letter-spacing: .2px;
+	border: 1px solid var(--main-header-color);
+	padding: 8px;
+	display: inline-block;
+	margin: 17px 0 0;
+}
+
+.artCard .bottomFace .content a:hover {
+	background: var(--main-header-color);
+	color: var(--main-bg-color);
+}
+
+/* <-------------contact page styles-----------> */
+.contact-page {
+	background-color: var(--secondary-bg-color);
+	color: var(--secondary-text-color);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 200px 30px 200px;
+	font-size: 1rem;
+}
+
+.contact-page article h2 {
+	font-size: 2em;
+}
+
+.contact-page p {
+	font-family: 'Dancing Script', cursive;
+	font-size: 1.4em;
+}
+
+.contact-page ul {
+	margin: 30px 0;
+	list-style: none;
+}
+
+.contact-page ul li a {
+	font-family: sans-serif;
+	color: var(--secondary-text-color);
+}
+
+.contact-page ul li {
+	font-size: 1.5em;
+	margin: 30px 0;
+	display: block;
+}
+
+.contact-page img {
+	transform: scaleX(-1);
+}
+
+/* <------fooer design style-------> */
+footer {
+	background-color: var(--secondary-bg-color);
+	color: var(--secondary-text-color);
+	text-align: center;
+	padding: 20px 20px;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+	.top-body {
+		width: 100%;
+	}
+
+	.top-body article {
+		padding-left: 20px;
+	}
+
+	.top-body:before {
+		height: 45%;
+	}
+
+	.top-body article p {
+		font-size: .5em;
+		padding-left: .2rem;
+		margin-bottom: 0;
+	}
+
+	.top-body article h1 {
+		font-size: 2em;
+		line-height: 60px;
+	}
+
+	.top-body article h3 {
+		font-size: .6em;
+		margin-top: 10px;
+	}
+
+	/* <--------intro-page style starts here------> */
+	.second-page {
+		padding: 0;
+		padding-top: 1rem;
+		font-size: 1rem;
+	}
+
+	.second-page .second-page-divider svg,
+	.third-page .third-page-divider svg,
+	.fourth-page .fourth-page-divider svg {
+		height: 80px;
+	}
+
+	.second-page nav {
+		padding: 5px;
+		border-radius: 0;
+	}
+
+	.second-page nav a {
+		padding: 0 5px;
+	}
+
+	.second-page nav section a,
+	.second-page nav section ul li {
+		font-size: .7em;
+		margin: 0 0 0 5px;
+	}
+
+	.second-page .img-intro-section {
+		height: 70%;
+		padding: 2rem 3rem 0 3rem;
+	}
+
+	.second-page .img-container {
+		display: none;
+	}
+
+	.second-page .img-intro-section .img-intro {
+		width: 100%;
+	}
+
+	.second-page .img-intro-section .img-intro h3 {
+		font-size: .9em;
+	}
+
+	.second-page .img-intro-section .img-intro h2 {
+		font-size: 1.5em;
+	}
+
+	.second-page .img-intro-section .img-intro p {
+		font-size: .9em;
+		word-spacing: 1px;
+		line-height: 25px;
+		margin-bottom: 20px;
+	}
+
+	.second-page .img-intro-section .img-intro a {
+		font-size: .9em;
+		padding: .5rem 1rem;
+	}
+
+	/* <--------projects-page style starts here------> */
+	.third-page {
+		padding: 0 2rem;
+		font-size: 1rem;
+	}
+
+	.third-page header h2 {
+		font-size: 1.5em;
+	}
+
+	.third-page header h6 {
+		font-size: .9em;
+	}
+
+	.third-page .project,
+	.third-page .project:nth-child(odd) {
+		flex-direction: column;
+		padding: 2rem 0;
+	}
+
+	.third-page .project .img {
+		width: 100%;
+	}
+
+	.third-page .project:nth-child(odd) .img {
+		margin-left: 0;
+	}
+
+	.third-page .project:nth-child(even) .img {
+		margin-right: 0;
+	}
+
+	.third-page .project .description h3 {
+		margin-top: 20px;
+		font-size: 1.3em;
+		margin-bottom: 10px;
+	}
+
+	.third-page .project .description p {
+		font-size: 1em;
+		word-spacing: 1px;
+		line-height: 20px;
+	}
+
+	.third-page .project .description ul li {
+		margin-right: 30px;
+	}
+
+	.third-page .project .description a {
+		padding: .5rem 1rem;
+	}
+
+	.third-custom-shape-divider .shape-fill {
+		fill: var(--main-bg-color);
+	}
+
+	/* <--------articles-page style starts here------> */
+	.fourth-page {
+		padding: 0 2rem;
+		padding-bottom: 5rem;
+		position: relative;
+	}
+
+	.fourth-page header h2 {
+		font-size: 1.5em;
+	}
+
+	.fourth-page header h6 {
+		font-size: .9em;
+	}
+
+	.artCardContainer {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		grid-gap: 20px;
+	}
+
+	.artCard .topFace {
+		height: 250px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		transform: translateY(0);
+	}
+
+	.artCard .topFace .content h3 {
+		font-size: 1.5em;
+	}
+
+	.artCard .bottomFace {
+		height: 240px;
+		padding: 20px;
+		transform: translateY(-10px);
+		opacity: 1;
+	}
+
+	.artCard .bottomFace .content p {
+		font-size: .9em;
+		letter-spacing: .3px;
+	}
+
+	.artCard .bottomFace .content a {
+		letter-spacing: .1px;
+		margin: 17px 0 0;
+	}
+
+	.fourth-custom-shape-divider .shape-fill {
+		fill: var(--secondary-bg-color);
+	}
+
+	/* <-------------contact page styles-----------> */
+	.contact-page {
+		flex-direction: column-reverse;
+		padding: 0 2rem;
+		font-size: 1rem;
+	}
+
+	.contact-page article h2 {
+		font-size: 1.5em;
+	}
+
+	.contact-page p {
+		font-size: 1em;
+	}
+
+	.contact-page ul {
+		margin: 30px 0;
+	}
+
+	.contact-page ul li {
+		font-size: 1em;
+		margin: 20px 0;
+	}
+
+	.contact-page img {
+		width: 100%;
+	}
+
+	footer {
+		padding-top: 0;
+		font-size: .9em;
+	}
+}

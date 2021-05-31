@@ -1,0 +1,305 @@
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+/* <--------defining dark and light themes styles starts here-------->*/
+
+:root {
+	--ON: initial;
+	--OFF: ;
+}
+
+.theme-default {
+	--default: var(--ON);
+	--light: var(--OFF);
+	--dark: var(--OFF);
+}
+
+.theme-light {
+	--light: var(--ON);
+	--dark: var(--OFF);
+	--default: var(--OFF);
+}
+
+.theme-dark {
+	--dark: var(--ON);
+	--light: var(--OFF);
+	--default: var(--OFF);
+}
+
+:root {
+	/* Define each variable in their light and dark mode */
+	--main-text-color: var(--default, #000000) var(--light, rgb(27, 56, 23)) var(--dark, #acacac);
+	--main-bg-color: var(--default, #ffffff) var(--light, #d2e4d6) var(--dark, #1f0909);
+	--main-header-color: var(--default, rgb(1, 45, 50)) var(--light, rgb(1, 45, 50)) var(--dark, rgb(255, 255, 255));
+	--secondary-bg-color: var(--default, rgb(216, 174, 141)) var(--light, rgba(0, 0, 0, 0.116)) var(--dark, #745858);
+	--secondary-text-color: var(--default, rgb(0, 32, 36)) var(--light, #142a18) var(--dark, #1f0909);
+}
+
+/* <--------defining dark and light themes styles ends here-------->*/
+
+body {
+	font-size: 17px;
+	background-color: var(--main-bg-color);
+	color: var(--main-text-color);
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	background-color: var(--secondary-bg-color);
+	padding: 10px;
+	margin: 1rem 3rem;
+	border-radius: 20px;
+	font-size: 1, 5rem;
+}
+
+nav ul {
+	display: flex;
+}
+
+nav li,
+nav ul li {
+	margin: 0 10px;
+	list-style: none;
+	cursor: pointer;
+	color: var(--secondary-text-color);
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: var(--secondary-text-color);
+}
+
+.default,
+.dark,
+.green {
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+}
+
+.default a {
+	width: 1vw;
+	height: 70%;
+	background-color: white;
+}
+
+.default a:nth-child(2) {
+	width: 1vw;
+	height: 70%;
+	border: 1px solid #64646454;
+	border-left: 0;
+	background-color: rgb(216, 174, 141);
+}
+
+.default a:nth-child(3) {
+	width: 1vw;
+	height: 70%;
+	background-color: rgb(0, 32, 36);
+}
+
+/* <---------dark color dopdown------> */
+.dark a {
+	width: 1vw;
+	height: 70%;
+	background-color: #acacac;
+}
+
+.dark a:nth-child(2) {
+	width: 1vw;
+	height: 70%;
+	background-color: #745858;
+}
+
+.dark a:nth-child(3) {
+	width: 1vw;
+	height: 70%;
+	background-color: #1f0909;
+}
+
+/* <----------green color dropdown--------> */
+.green a {
+	width: 1vw;
+	height: 70%;
+	background-color: #d2e4d6;
+}
+
+.green a:nth-child(2) {
+	width: 1vw;
+	height: 70%;
+	background-color: rgb(27, 56, 23);
+}
+
+.green a:nth-child(3) {
+	width: 1vw;
+	height: 70%;
+	background-color: #142a18;
+}
+
+.profile-section {
+	padding: 20px 82px 20px 120px;
+	display: grid;
+	grid-template-columns: 1fr;
+	font-size: 1.5rem;
+	position: relative;
+}
+
+.profile {
+	display: flex;
+	align-items: center;
+	width: 100%;
+}
+
+.profile-img-header {
+	display: flex;
+}
+
+.profile-img-header header h5 {
+	font-size: 1.2rem;
+}
+
+.profile-img-header header p {
+	font-family: 'Public Sans', sans-serif;
+	font-size: .8rem;
+}
+
+.profile-img-header .img-container {
+	background: url('./assets/mezie.jpg') no-repeat;
+	height: 30vh;
+	width: 14vw;
+	background-position: center;
+	background-size: cover;
+	border-radius: 50%;
+	margin-right: 50px;
+}
+
+.profile-first pre,
+.profile-second pre,
+.profile-third pre {
+	font-size: .8em;
+	font-family: 'Dancing Script', cursive;
+	margin: 0 20px;
+}
+
+.profile-first h1,
+.profile-second h1,
+.profile-third h1 {
+	text-transform: uppercase;
+	font-size: 2.7em;
+	font-family: 'Public Sans', sans-serif;
+}
+
+.profile-first h1 sup,
+.profile-second h1 sup,
+.profile-third h1 sup {
+	font-family: 'Dancing Script', cursive;
+	font-size: .5em;
+	text-shadow: 2px 2px #ff0000;
+}
+
+.profile-first {
+	justify-content: flex-end;
+	margin-top: -40px;
+}
+
+.profile-second {
+	margin: 40px 0 40px 40px;
+}
+
+.profile-third {
+	justify-content: center;
+}
+
+/* <----------curve divider style starts here----------> */
+.profile-section .profile-third-divider {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	overflow: hidden;
+	line-height: 0;
+}
+
+.profile-section .profile-third-divider svg {
+	position: relative;
+	display: block;
+	width: calc(148% + 1.3px);
+	height: 178px;
+	transform-origin: bottom;
+	animation: animateWave 1000ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
+}
+
+.profile-section .profile-third-divider {
+	fill: var(--secondary-bg-color);
+}
+
+@keyframes animateWave {
+	0% {
+		transform: scale(1, 0);
+	}
+	100% {
+		transform: scale(1, 1);
+	}
+}
+
+/* <----------dropdown content style starts here----------> */
+.dropdown-content {
+	background-color: var(--secondary-bg-color);
+	color: var(--secondary-text-color);
+	padding: 0 250px 50px 250px;
+	font-size: 1rem;
+}
+
+.dropdown-content h4 {
+	font-size: 1.5em;
+	text-transform: capitalize;
+	cursor: pointer;
+	padding-top: 20px;
+}
+
+.dropdown-content .dropdown-text {
+	display: none;
+}
+
+.dropdown-text {
+	display: block;
+}
+
+.dropdown-content article p {
+	text-indent: 2rem;
+	line-height: 30px;
+}
+
+.dropdown-content article {
+	padding-left: 3rem;
+}
+
+.dropdown-content article ol li {
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.dropdown-content article ol li p {
+	font-weight: normal;
+}
+
+.dropdown-content article ol li p:nth-child(2) {
+	font-family: 'Public Sans', sans-serif;
+	line-height: 10px;
+	text-shadow: none;
+}
+
+/* <------fooer design style-------> */
+
+footer {
+	background-color: var(--secondary-bg-color);
+	color: var(--secondary-text-color);
+	text-align: center;
+	padding: 20px 20px;
+}
