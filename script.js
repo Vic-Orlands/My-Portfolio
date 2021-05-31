@@ -40,3 +40,9 @@ function toggleVolunteer() {
 
 	dropdownText.classList.toggle('dropdown-text');
 }
+
+function toggleSkill() {
+	const dropdownText = document.querySelector('#skill-text');
+
+	dropdownText.classList.toggle('dropdown-text');
+}
