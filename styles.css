@@ -918,3 +918,8 @@ footer {
 		font-size: .9em;
 	}
 }
+
+/* <-------moblie view--------> */
+@media screen and (max-width: 768px) {
+	
+}
