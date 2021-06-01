@@ -22,27 +22,29 @@ let whiteTheme = document.querySelector('#white').addEventListener('click', () =
 	document.querySelector('html').classList.remove('theme-light');
 });
 
+// <---------below is the function that hides and shows the profile nav dropdown--------->
+const showNav = () => {
+	const navContent = document.querySelector('#mobileNav');
+	navContent.classList.toggle('mobile-view');
+};
+
 // <---------below is the function that hides and shows the profile dropdown--------->
 function toggleIntro() {
 	const dropdownText = document.querySelector('#intro-text');
-
 	dropdownText.classList.toggle('dropdown-text');
 }
 
 function toggleExperience() {
 	const dropdownText = document.querySelector('#experience-text');
-
 	dropdownText.classList.toggle('dropdown-text');
 }
 
 function toggleVolunteer() {
 	const dropdownText = document.querySelector('#volunteer-text');
-
 	dropdownText.classList.toggle('dropdown-text');
 }
 
 function toggleSkill() {
 	const dropdownText = document.querySelector('#skill-text');
-
 	dropdownText.classList.toggle('dropdown-text');
 }

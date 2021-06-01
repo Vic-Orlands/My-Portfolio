@@ -34,11 +34,11 @@
 
 :root {
 	/* Define each variable in their light and dark mode */
-	--main-text-color: var(--default, #000000) var(--light, rgb(27, 56, 23)) var(--dark, #acacac);
-	--main-bg-color: var(--default, #ffffff) var(--light, #d2e4d6) var(--dark, #1f0909);
-	--main-header-color: var(--default, rgb(1, 45, 50)) var(--light, rgb(1, 45, 50)) var(--dark, rgb(255, 255, 255));
-	--secondary-bg-color: var(--default, rgb(216, 174, 141)) var(--light, rgba(0, 0, 0, 0.116)) var(--dark, #745858);
-	--secondary-text-color: var(--default, rgb(0, 32, 36)) var(--light, #142a18) var(--dark, #1f0909);
+	--main-text-color: var(--default, #000000) var(--light, rgb(27, 56, 23)) var(--dark, #ffffff);
+	--main-bg-color: var(--default, #ffffff) var(--light, #d2e4d6) var(--dark, #745858);
+	--main-header-color: var(--default, rgb(1, 45, 50)) var(--light, rgb(1, 45, 50)) var(--dark, #ffffff);
+	--secondary-bg-color: var(--default, rgb(216, 174, 141)) var(--light, rgba(0, 0, 0, 0.116)) var(--dark, #1f0909);
+	--secondary-text-color: var(--default, rgb(0, 32, 36)) var(--light, #142a18) var(--dark, #ffffff);
 }
 
 /* <--------defining dark and light themes styles ends here-------->*/
@@ -154,25 +154,93 @@ a {
 	font-size: 1em;
 	color: var(--main-text-color);
 	font-weight: 700;
-	padding: 0 5px;
 }
 
-.second-page nav section,
-.second-page nav section ul {
+.second-page nav section article,
+.second-page nav section article ul {
 	display: flex;
 	list-style: none;
 }
 
-.second-page nav section a,
-.second-page nav section ul li {
-	margin: 0 0 0 10px;
+.second-page nav section #nav-bar {
+	display: none;
+}
+
+.second-page nav section article > a {
+	margin: 0 10px;
 	font-weight: normal;
 	cursor: pointer;
 }
 
-.second-page nav section a:hover,
-.second-page nav section ul li:hover {
+.second-page nav section a:hover {
 	text-decoration: underline;
+}
+
+.default,
+.dark,
+.green {
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	margin: 0 10px;
+}
+
+.default a {
+	width: 1vw;
+	height: 70%;
+	background-color: white;
+}
+
+.default a:nth-child(2) {
+	width: 1vw;
+	height: 70%;
+	border: 1px solid #64646454;
+	border-left: 0;
+	background-color: rgb(216, 174, 141);
+}
+
+.default a:nth-child(3) {
+	width: 1vw;
+	height: 70%;
+	background-color: rgb(0, 32, 36);
+}
+
+/* <---------dark color dopdown------> */
+.dark a {
+	width: 1vw;
+	height: 70%;
+	background-color: #acacac;
+}
+
+.dark a:nth-child(2) {
+	width: 1vw;
+	height: 70%;
+	background-color: #745858;
+}
+
+.dark a:nth-child(3) {
+	width: 1vw;
+	height: 70%;
+	background-color: #1f0909;
+}
+
+/* <----------green color dropdown--------> */
+.green a {
+	width: 1vw;
+	height: 70%;
+	background-color: #d2e4d6;
+}
+
+.green a:nth-child(2) {
+	width: 1vw;
+	height: 70%;
+	background-color: rgb(27, 56, 23);
+}
+
+.green a:nth-child(3) {
+	width: 1vw;
+	height: 70%;
+	background-color: #142a18;
 }
 
 .second-page .img-intro-section {
@@ -537,19 +605,19 @@ footer {
 	}
 
 	.top-body article p {
-		font-size: .5em;
+		font-size: .4em;
 		padding-left: .2rem;
 		margin-bottom: 0;
 	}
 
 	.top-body article h1 {
-		font-size: 2em;
+		font-size: 1.5em;
 		line-height: 60px;
 	}
 
 	.top-body article h3 {
-		font-size: .6em;
-		margin-top: 10px;
+		font-size: .45em;
+		margin-top: 0px;
 	}
 
 	/* <--------intro-page style starts here------> */
@@ -568,21 +636,114 @@ footer {
 	.second-page nav {
 		padding: 5px;
 		border-radius: 0;
+		position: relative;
+		align-items: center;
 	}
 
-	.second-page nav a {
-		padding: 0 5px;
+	.second-page nav section #nav-bar {
+		display: block;
 	}
 
-	.second-page nav section a,
-	.second-page nav section ul li {
-		font-size: .7em;
-		margin: 0 0 0 5px;
+	.second-page nav section > article {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		position: absolute;
+		right: 0;
+		left: 60%;
+		top: 100%;
+		min-height: 20vh;
+		padding-bottom: 10px;
+		background-color: var(--secondary-bg-color);
+		color: var(--secondary-text-color);
+	}
+
+	.second-page nav section .mobile-view {
+		display: none;
+	}
+
+	.mobile-view {
+		display: block;
+	}
+
+	.second-page nav section article ul {
+		flex-direction: column;
+		padding: 0;
+	}
+
+	.second-page nav section article a {
+		font-size: .8em;
+		margin: 5px 0;
+	}
+
+	.default,
+	.dark,
+	.green {
+		margin: 0;
+	}
+
+	.default a {
+		width: 10vw;
+		height: 4vh;
+		background-color: white;
+	}
+
+	.default a:nth-child(2) {
+		width: 10vw;
+		height: 4vh;
+		border: 1px solid #64646454;
+		border-left: 0;
+		background-color: rgb(216, 174, 141);
+	}
+
+	.default a:nth-child(3) {
+		width: 10vw;
+		height: 4vh;
+		background-color: rgb(0, 32, 36);
+	}
+
+	/* <---------dark color dopdown------> */
+	.dark a {
+		width: 10vw;
+		height: 4vh;
+		background-color: #acacac;
+	}
+
+	.dark a:nth-child(2) {
+		width: 10vw;
+		height: 4vh;
+		background-color: #745858;
+	}
+
+	.dark a:nth-child(3) {
+		width: 10vw;
+		height: 4vh;
+		background-color: #1f0909;
+	}
+
+	/* <----------green color dropdown--------> */
+	.green a {
+		width: 10vw;
+		height: 4vh;
+		background-color: #d2e4d6;
+	}
+
+	.green a:nth-child(2) {
+		width: 10vw;
+		height: 4vh;
+		background-color: rgb(27, 56, 23);
+	}
+
+	.green a:nth-child(3) {
+		width: 10vw;
+		height: 4vh;
+		background-color: #142a18;
 	}
 
 	.second-page .img-intro-section {
 		height: 70%;
-		padding: 2rem 3rem 0 3rem;
+		padding: 2rem;
+		padding-bottom: 0;
 	}
 
 	.second-page .img-container {
@@ -594,17 +755,17 @@ footer {
 	}
 
 	.second-page .img-intro-section .img-intro h3 {
-		font-size: .9em;
+		font-size: .8em;
 	}
 
 	.second-page .img-intro-section .img-intro h2 {
-		font-size: 1.5em;
+		font-size: 1.3em;
 	}
 
 	.second-page .img-intro-section .img-intro p {
-		font-size: .9em;
+		font-size: .8em;
 		word-spacing: 1px;
-		line-height: 25px;
+		line-height: 20px;
 		margin-bottom: 20px;
 	}
 
@@ -635,6 +796,7 @@ footer {
 
 	.third-page .project .img {
 		width: 100%;
+		background-position: inherit;
 	}
 
 	.third-page .project:nth-child(odd) .img {
@@ -710,8 +872,8 @@ footer {
 	}
 
 	.artCard .bottomFace .content p {
-		font-size: .9em;
-		letter-spacing: .3px;
+		font-size: .8em;
+		letter-spacing: 0px;
 	}
 
 	.artCard .bottomFace .content a {

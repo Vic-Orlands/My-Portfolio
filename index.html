@@ -16,7 +16,7 @@
 
     <div>
         <!-- first page starts here -->
-        <section class="top-body">
+        <section class="top-body" id="top">
             <article>
                 <p>INNOCENT VICTOR</p>
                 <h1>front end developer 👨‍💻</h1>
@@ -28,18 +28,32 @@
         <!-- scond page starts here -->
         <section class="second-page">
             <nav>
-                <a href="/html/">Innocent Victor</a>
+                <a href="#top">Innocent Victor</a>
 
                 <section>
-                    <a href="#articles">Articles</a>
-                    <a href="#projects">Projects</a>
-                    <a href="/python/">Contact Me</a>
+                    <li class="fa" id="nav-bar" onclick="showNav()" >&#xf038;</li>
+
+                    <article class="mobile-view" id="mobileNav">
+                        <a href="#articles">Articles</a>
+                        <a href="#projects">Projects</a>
+                        <a href="#contact">Contact Me</a>
                     <ul>
-                        <li id="white" style="color: black;">Default Theme💡
-                            <li>
-                                <li id="dark" style="color: black;">Dark Theme💫</li>
-                                <li id="green" style="color: black;">Bright Theme☀️</li>
-                    </ul>
+                        <li id="white" class="default">
+                            <a></a>
+                            <a></a>
+                            <a></a>
+                        </li>
+                        <li id="dark" class="dark">
+                            <a></a>
+                            <a></a>
+                            <a></a>
+                        </li>
+                        <li id="green" class="green">
+                            <a></a>
+                            <a></a>
+                            <a></a></li>
+                        </ul>
+                    </article>
                 </section>
             </nav>
 
@@ -409,7 +423,7 @@
         </div>
     </section>
 
-    <section class="contact-page">
+    <section class="contact-page" id="contact">
         <article>
             <article>
 
