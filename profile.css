@@ -153,7 +153,6 @@ nav ul li a {
 .profile {
 	display: flex;
 	align-items: center;
-	/* width: 100%; */
 }
 
 .profile-img-header {
@@ -331,52 +330,63 @@ footer {
 		height: 15px;
 	}
 
-	.profile {
-		display: flex;
-		align-items: center;
-		width: 90%;
-	}
-
 	.profile-section {
 		padding: 0;
 	}
 
+	.profile {
+		display: block;
+	}
+
 	.profile-img-header {
 		margin: 10px 0 15px 20px;
+		display: flex;
 	}
 
 	.profile-img-header .img-container {
 		height: 23vh;
-		width: 30vw;
+		width: 40vw;
 		margin-right: 10px;
+	}
+
+	.profile-first,
+	.profile-second,
+	.profile-third {
+		padding: 0 15px;
 	}
 
 	.profile-first {
 		margin: 0;
+		display: flex;
+		align-items: flex-start;
+		flex-direction: column-reverse;
 	}
 
 	.profile-second {
-		margin: 40px 0 40px 30px;
+		margin: 20px 0;
 	}
 
 	.profile-third {
-		margin: 0;
+		display: flex;
+		align-items: flex-start;
+		flex-direction: column-reverse;
 	}
 
 	.profile-first pre,
 	.profile-second pre,
 	.profile-third pre {
-		font-size: .6em;
+		font-size: .64em;
+		margin: 0;
 	}
 
 	.profile-first h1,
 	.profile-third h1 {
-		font-size: 1.2em;
+		font-size: 1em;
+		margin-bottom: 5px;
 	}
 
 	.profile-second h1 {
-		font-size: 1.2em;
-		text-align: right;
+		font-size: 1em;
 	}
 
 	.profile-first h1 sup,
