@@ -591,7 +591,7 @@ footer {
 }
 
 /** For mobile devices **/
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) and (min-width: 300px) {
 	.top-body {
 		width: 100%;
 	}
@@ -642,6 +642,7 @@ footer {
 
 	.second-page nav section #nav-bar {
 		display: block;
+		cursor: pointer;
 	}
 
 	.second-page nav section > article {
@@ -917,9 +918,4 @@ footer {
 		padding-top: 0;
 		font-size: .9em;
 	}
-}
-
-/* <-------moblie view--------> */
-@media screen and (max-width: 768px) {
-	
 }

@@ -153,7 +153,7 @@ nav ul li a {
 .profile {
 	display: flex;
 	align-items: center;
-	width: 100%;
+	/* width: 100%; */
 }
 
 .profile-img-header {
@@ -165,7 +165,7 @@ nav ul li a {
 }
 
 .profile-img-header header p {
-	font-family: 'Public Sans', sans-serif;
+	font-family: sans-serif;
 	font-size: .8rem;
 }
 
@@ -296,10 +296,132 @@ nav ul li a {
 }
 
 /* <------fooer design style-------> */
-
 footer {
 	background-color: var(--secondary-bg-color);
 	color: var(--secondary-text-color);
 	text-align: center;
 	padding: 20px 20px;
+}
+
+/*----------* For mobile devices *----------*/
+@media screen and (max-width: 780px) and (min-width: 300px) {
+	nav {
+		margin: 1rem;
+		align-items: center;
+	}
+
+	.default a,
+	.dark a,
+	.green a {
+		width: 2vw;
+		height: 15px;
+	}
+
+	.default a:nth-child(2),
+	.dark a:nth-child(2),
+	.green a:nth-child(2) {
+		width: 2vw;
+		height: 15px;
+	}
+
+	.default a:nth-child(3),
+	.dark a:nth-child(3),
+	.green a:nth-child(3) {
+		width: 2vw;
+		height: 15px;
+	}
+
+	.profile {
+		display: flex;
+		align-items: center;
+		width: 90%;
+	}
+
+	.profile-section {
+		padding: 0;
+	}
+
+	.profile-img-header {
+		margin: 10px 0 15px 20px;
+	}
+
+	.profile-img-header .img-container {
+		height: 23vh;
+		width: 30vw;
+		margin-right: 10px;
+	}
+
+	.profile-first {
+		margin: 0;
+	}
+
+	.profile-second {
+		margin: 40px 0 40px 30px;
+	}
+
+	.profile-third {
+		margin: 0;
+	}
+
+	.profile-first pre,
+	.profile-second pre,
+	.profile-third pre {
+		font-size: .6em;
+	}
+
+	.profile-first h1,
+	.profile-third h1 {
+		font-size: 1.2em;
+	}
+
+	.profile-second h1 {
+		font-size: 1.2em;
+		text-align: right;
+	}
+
+	.profile-first h1 sup,
+	.profile-second h1 sup,
+	.profile-third h1 sup {
+		font-family: 'Dancing Script', cursive;
+		font-size: .5em;
+	}
+
+	.profile-section br:nth-child(even) {
+		display: none;
+	}
+
+	/* <----------curve divider style starts here----------> */
+	.profile-section .profile-third-divider svg {
+		height: 80px;
+	}
+
+	/* <----------dropdown content style starts here----------> */
+	.dropdown-content {
+		padding: 0 20px;
+	}
+
+	.dropdown-content h4 {
+		font-size: 1.2em;
+	}
+
+	.dropdown-content article p {
+		text-indent: 1rem;
+		line-height: 30px;
+	}
+
+	.dropdown-content article {
+		padding-left: 1rem;
+	}
+
+	.dropdown-content article ol li {
+		font-weight: bold;
+		margin-top: 10px;
+		margin-bottom: 0;
+		margin-left: 20px;
+	}
+
+	/* <------fooer design style-------> */
+	footer {
+		padding: 20px 20px;
+	}
 }
