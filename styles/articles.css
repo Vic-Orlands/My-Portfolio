@@ -1,0 +1,214 @@
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+/* <--------defining dark and light themes styles starts here-------->*/
+
+:root {
+	--ON: initial;
+	--OFF: ;
+}
+
+.theme-default {
+	--default: var(--ON);
+	--light: var(--OFF);
+	--dark: var(--OFF);
+}
+
+.theme-light {
+	--light: var(--ON);
+	--dark: var(--OFF);
+	--default: var(--OFF);
+}
+
+.theme-dark {
+	--dark: var(--ON);
+	--light: var(--OFF);
+	--default: var(--OFF);
+}
+
+:root {
+	/* Define each variable in their light and dark mode */
+	--main-text-color: var(--default, #000000) var(--light, rgb(27, 56, 23)) var(--dark, #ffffff);
+	--main-bg-color: var(--default, #ffffff) var(--light, #d2e4d6) var(--dark, #745858);
+	--main-header-color: var(--default, rgb(1, 45, 50)) var(--light, rgb(1, 45, 50)) var(--dark, #ffffff);
+	--secondary-bg-color: var(--default, rgb(216, 174, 141)) var(--light, rgba(0, 0, 0, 0.116)) var(--dark, #1f0909);
+	--secondary-text-color: var(--default, rgb(0, 32, 36)) var(--light, #142a18) var(--dark, #ffffff);
+}
+
+/* <--------defining dark and light themes styles ends here-------->*/
+
+body {
+	font-size: 17px;
+	background-color: var(--main-bg-color);
+	color: var(--main-text-color);
+	padding: 0 27%;
+}
+
+h1,
+h4,
+h3 {
+	display: block;
+}
+
+a {
+	text-decoration: none;
+}
+
+/* <------------article nav -------------> */
+
+.article-nav {
+	display: flex;
+	justify-content: space-between;
+	background-color: var(--secondary-bg-color);
+	padding: 10px;
+	margin: 1rem 0;
+	border-radius: 20px;
+	font-size: 1, 5rem;
+}
+
+.article-nav ul {
+	display: flex;
+}
+
+.article-nav li,
+.article-nav ul li {
+	margin: 0 10px;
+	list-style: none;
+	cursor: pointer;
+	color: var(--secondary-text-color);
+}
+
+.article-nav ul li a {
+	text-decoration: none;
+	color: var(--secondary-text-color);
+}
+
+.default,
+.dark,
+.green {
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+}
+
+.default a {
+	width: 1vw;
+	height: 70%;
+	background-color: white;
+}
+
+.default a:nth-child(2) {
+	width: 1vw;
+	height: 70%;
+	border: 1px solid #64646454;
+	border-left: 0;
+	background-color: rgb(216, 174, 141);
+}
+
+.default a:nth-child(3) {
+	width: 1vw;
+	height: 70%;
+	background-color: rgb(0, 32, 36);
+}
+
+/* <---------dark color dopdown------> */
+.dark a {
+	width: 1vw;
+	height: 70%;
+	background-color: #acacac;
+}
+
+.dark a:nth-child(2) {
+	width: 1vw;
+	height: 70%;
+	background-color: #745858;
+}
+
+.dark a:nth-child(3) {
+	width: 1vw;
+	height: 70%;
+	background-color: #1f0909;
+}
+
+/* <----------green color dropdown--------> */
+.green a {
+	width: 1vw;
+	height: 70%;
+	background-color: #d2e4d6;
+}
+
+.green a:nth-child(2) {
+	width: 1vw;
+	height: 70%;
+	background-color: rgb(27, 56, 23);
+}
+
+.green a:nth-child(3) {
+	width: 1vw;
+	height: 70%;
+	background-color: #142a18;
+}
+
+/* <------------article head------------> */
+.article-header {
+	margin-bottom: 40px;
+}
+
+.article-header h1 {
+	font-size: 3rem;
+	text-align: center;
+	text-shadow: 1px 1px 1px var(--main-bg-color), 3px 3px 5px var(--secondary-text-color);
+}
+
+.article-header {
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--main-text-color);
+}
+
+/* <------------article list------------> */
+.article-list {
+	margin: 0 0 0 20px;
+}
+
+.article-list section pre {
+	position: absolute;
+	left: -20px;
+	top: -20px;
+	background-color: var(--main-header-color);
+	color: var(--main-bg-color);
+	padding: 15px 25px;
+	font-size: 1.5rem;
+	box-shadow: 1px 1px 1px var(--main-bg-color), 3px 3px 5px var(--secondary-text-color);
+}
+
+.article-list section {
+	background-color: var(--secondary-bg-color);
+	margin: 35px 0;
+	padding: 20px 40px 20px 60px;
+	position: relative;
+}
+
+.article-list h2 {
+	text-shadow: 1px 1px 1px var(--main-bg-color), 3px 3px 5px var(--secondary-text-color);
+}
+
+.article-list p {
+	margin: 10px 0;
+}
+
+.article-list a {
+	padding: 10px 5px;
+    border: 1px solid var(--secondary-text-color);
+    color: var(--secondary-text-color);
+}
+
+.article-list a:hover {
+    background: var(--main-text-color);
+    color: var(--main-bg-color);
+}

@@ -92,6 +92,18 @@ a {
 	font-size: 2em;
 	text-transform: capitalize;
 	line-height: 75px;
+	display: block;
+}
+
+.top-body article h1::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	transform-origin: 100% 0;
+	background: #ffffff;
 }
 
 .top-body article h3 {
@@ -341,7 +353,7 @@ a {
 }
 
 .third-page .project .img {
-	background: #504e4e url("./assets/q-top.png") no-repeat center;
+	background: #504e4e url("/assets/q-top.png") no-repeat center;
 	background-size: cover;
 	background-blend-mode: soft-light;
 }
@@ -391,25 +403,25 @@ a {
 }
 
 .third-page .two .img {
-	background: #504e4e url("./assets/photography.png") no-repeat center;
+	background: #504e4e url("/assets/photography.png") no-repeat center;
 	background-size: cover;
 	background-blend-mode: soft-light;
 }
 
 .third-page .three .img {
-	background: #504e4e url("./assets/schoolapp.jpg") no-repeat center;
+	background: #504e4e url("/assets/schoolapp.jpg") no-repeat center;
 	background-size: cover;
 	background-blend-mode: soft-light;
 }
 
 .third-page .four .img {
-	background: #504e4e url("./assets/interior.png") no-repeat center;
+	background: #504e4e url("/assets/interior.png") no-repeat center;
 	background-size: cover;
 	background-blend-mode: soft-light;
 }
 
 .third-page .five .img {
-	background: #504e4e url("./assets/portfolio.png") no-repeat center;
+	background: #504e4e url("/assets/portfolio.png") no-repeat center;
 	background-size: cover;
 	background-blend-mode: soft-light;
 }
@@ -419,7 +431,7 @@ a {
 }
 
 .third-page .six .img {
-	background: #504e4e url("./assets/portfolio=v3.png") no-repeat center;
+	background: #504e4e url("/assets/portfolio=v3.png") no-repeat center;
 	background-size: cover;
 	background-blend-mode: soft-light;
 	border: 1px solid var(--secondary-bg-color);
@@ -542,6 +554,17 @@ a {
 	color: var(--main-bg-color);
 }
 
+.more-list {
+	color: var(--secondary-text-color);
+	border: 1px solid var(--secondary-text-color);
+	padding: 20px 0 20px 20px;
+	width: 60%;
+}
+
+.more-list:hover {
+	background-color: var(--secondary-bg-color);
+}
+
 /* <-------------contact page styles-----------> */
 .contact-page {
 	background-color: var(--secondary-bg-color);
@@ -576,6 +599,10 @@ a {
 	font-size: 1.5em;
 	margin: 30px 0;
 	display: block;
+}
+
+.contact-page ul li:hover {
+	text-shadow: 1px 1px 1px var(--main-bg-color), 3px 3px 5px var(--secondary-text-color);
 }
 
 .contact-page img {

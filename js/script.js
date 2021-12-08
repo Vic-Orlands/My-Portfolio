@@ -48,3 +48,15 @@ function toggleSkill() {
 	const dropdownText = document.querySelector('#skill-text');
 	dropdownText.classList.toggle('dropdown-text');
 }
+
+// animation calls starts here
+
+let rule = CSSRulePlugin.getRule(".top-body article h1::after")
+
+gsap.from('.up', {
+	opacity: 0, duration: 1.5, y: 70, delay: 0.6, stagger: 1.6
+})
+gsap.from('.dwn', {
+	opacity: 1, duration: 1.5, y:  -70, ease: "elastic(4, 0.3)"
+})
+gsap.to(rule, { cssRule: { scaleY: 0}, duration: 1.2})

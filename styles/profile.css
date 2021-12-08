@@ -294,6 +294,40 @@ nav ul li a {
 	text-shadow: none;
 }
 
+/* <---------experience----------> */
+.experience ol {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-column-gap: 50px;
+	list-style: none;
+}
+
+.experience ol li {
+	background-color: var(--main-bg-color);
+	margin: 30px 0;
+	padding: 20px 60px;
+	position: relative;
+}
+
+.experience ol li pre {
+	position: absolute;
+	left: -20px;
+	top: -20px;
+	background-color: var(--main-header-color);
+	color: var(--main-bg-color);
+	padding: 15px 25px;
+	font-size: 1.5rem;
+}
+
+.experience ol li p {
+	font-size: 1.1rem;
+	margin: 3px 0;
+}
+
+.experience ol li small {
+	margin-left: 2rem;
+}
+
 /* <------fooer design style-------> */
 footer {
 	background-color: var(--secondary-bg-color);
