@@ -167,8 +167,8 @@ a {
 }
 
 .article-header {
-    padding-bottom: 20px;
-    border-bottom: 1px solid var(--main-text-color);
+	padding-bottom: 20px;
+	border-bottom: 1px solid var(--main-text-color);
 }
 
 /* <------------article list------------> */
@@ -200,15 +200,30 @@ a {
 
 .article-list p {
 	margin: 10px 0;
+	padding-bottom: 10px;
 }
 
 .article-list a {
 	padding: 10px 5px;
-    border: 1px solid var(--secondary-text-color);
-    color: var(--secondary-text-color);
+	border: 1px solid var(--secondary-text-color);
+	color: var(--secondary-text-color);
 }
 
 .article-list a:hover {
-    background: var(--main-text-color);
-    color: var(--main-bg-color);
+	background: var(--main-text-color);
+	color: var(--main-bg-color);
+}
+
+/*----------* For mobile devices *----------*/
+@media screen and (max-width: 780px) and (min-width: 300px) {
+	body {
+		font-size: 14px;
+		padding: 0 10%;
+	}
+
+	.article-list section p {
+		font-size: .8rem;
+		padding-bottom: 10px;
+	}
+
 }

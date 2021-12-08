@@ -169,7 +169,7 @@ nav ul li a {
 }
 
 .profile-img-header .img-container {
-	background: url('./assets/mezie.jpg') no-repeat;
+	background: url('/assets/mezie.jpg') no-repeat;
 	height: 30vh;
 	width: 14vw;
 	background-position: center;
