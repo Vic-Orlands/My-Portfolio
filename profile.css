@@ -464,6 +464,30 @@ footer {
 		margin-left: 20px;
 	}
 
+	/* <---------experience----------> */
+	.experience ol {
+		grid-template-columns: repeat(1, 1fr);
+		grid-row-gap: 30px;
+		margin-top: 30px;
+	}
+
+	.experience ol li {
+		margin-right: 20px;
+	}
+
+	.experience ol li pre {
+		padding: 13px 23px;
+		font-size: 1.2rem;
+	}
+
+	.experience ol li p {
+		font-size: 1rem;
+	}
+
+	.experience ol li small {
+		margin-left: .9rem;
+	}
+
 	/* <------fooer design style-------> */
 	footer {
 		padding: 20px 20px;

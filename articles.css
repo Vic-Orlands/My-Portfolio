@@ -218,12 +218,32 @@ a {
 @media screen and (max-width: 780px) and (min-width: 300px) {
 	body {
 		font-size: 14px;
-		padding: 0 10%;
+		padding: 0 8%;
+	}
+
+	.default a,
+	.dark a,
+	.green a {
+		width: 2vw;
+		height: 15px;
+	}
+
+	.default a:nth-child(2),
+	.dark a:nth-child(2),
+	.green a:nth-child(2) {
+		width: 2vw;
+		height: 15px;
+	}
+
+	.default a:nth-child(3),
+	.dark a:nth-child(3),
+	.green a:nth-child(3) {
+		width: 2vw;
+		height: 15px;
 	}
 
 	.article-list section p {
 		font-size: .8rem;
 		padding-bottom: 10px;
 	}
-
 }

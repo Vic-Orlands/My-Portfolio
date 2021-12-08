@@ -909,6 +909,11 @@ footer {
 		margin: 17px 0 0;
 	}
 
+	.more-list {
+		padding: 10px 0 10px 10px;
+		width: 41.5%;
+	}
+
 	.fourth-custom-shape-divider .shape-fill {
 		fill: var(--secondary-bg-color);
 	}
