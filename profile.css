@@ -472,7 +472,7 @@ footer {
 	}
 
 	.experience ol li {
-		margin-right: 20px;
+		padding: 15px 15px 15px 50px;
 	}
 
 	.experience ol li pre {
@@ -481,11 +481,13 @@ footer {
 	}
 
 	.experience ol li p {
-		font-size: 1rem;
+		font-size: .9rem;
+		text-indent: 0;
+		line-height: 20px !important;
 	}
 
 	.experience ol li small {
-		margin-left: .9rem;
+		margin: 0;
 	}
 
 	/* <------fooer design style-------> */
